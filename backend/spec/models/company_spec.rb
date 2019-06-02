@@ -7,6 +7,6 @@ RSpec.describe Company, type: :model do
   end
 
   describe "Associations" do
-    it { should have_many(:complaints) }
+    it { should have_many(:complaints).with_dependent(:destroy) }
   end
 end

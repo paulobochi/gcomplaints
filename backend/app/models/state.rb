@@ -2,7 +2,8 @@ class State
   include Mongoid::Document
   field :name, type: String
 
-  has_many :cities
+  belongs_to :country
+  has_many :cities, dependent: :destroy
 
   validates :name, presence: true, uniqueness: true
 end

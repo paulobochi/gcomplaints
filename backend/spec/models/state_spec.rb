@@ -7,6 +7,7 @@ RSpec.describe State, type: :model do
   end
 
   describe "Associations" do
-    it { should have_many(:cities) }
+    it { should belong_to(:country) }
+    it { should have_many(:cities).with_dependent(:destroy) }
   end
 end

@@ -7,6 +7,6 @@ RSpec.describe City, type: :model do
   end
 
   describe "Associations" do
-    it { should have_many(:complaints) }
+    it { should belong_to(:state) }
   end
 end
