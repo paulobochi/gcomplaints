@@ -1,9 +1,9 @@
 {
   "resource": "Companies",
   "resource_explanation": null,
-  "http_method": "POST",
-  "route": "/companies",
-  "description": "Creating a company",
+  "http_method": "PUT",
+  "route": "/companies/:id",
+  "description": "Updating company",
   "explanation": null,
   "parameters": [
     {
@@ -16,9 +16,9 @@
   ],
   "requests": [
     {
-      "request_method": "POST",
-      "request_path": "/companies",
-      "request_body": "name=Company+Test",
+      "request_method": "PUT",
+      "request_path": "/companies/5cf5476b53a6340b59865b23",
+      "request_body": "name=New+Company+Name",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -29,17 +29,17 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5cf5476b53a6340b59865b20\",\n  \"name\": \"Company Test\"\n}",
+      "response_body": "{\n  \"id\": \"5cf5476b53a6340b59865b23\",\n  \"name\": \"New Company Name\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"29f053dcf78e40f0e8437a0cbc6539c4\"",
+        "ETag": "W/\"faf74b4d2cb9e3a6c16dbe5d49efd34c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "1a5e8cf4-7671-4a63-ae97-9a25250678bb",
-        "X-Runtime": "0.005439",
-        "Content-Length": "55"
+        "X-Request-Id": "cbc9cb3a-7135-473c-8ef8-45f95f8f9318",
+        "X-Runtime": "0.005479",
+        "Content-Length": "59"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:3000/companies\" -d 'name=Company+Test' -X POST \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/companies/5cf5476b53a6340b59865b23\" -d 'name=New+Company+Name' -X PUT \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

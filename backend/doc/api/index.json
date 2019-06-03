@@ -12,8 +12,15 @@
           "method": "post"
         },
         {
-          "description": "Getting specific company",
-          "link": "companies/getting_specific_company.json",
+          "description": "Deleting company",
+          "link": "companies/deleting_company.json",
+          "groups": "all",
+          "route": "/companies/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Getting company by id",
+          "link": "companies/getting_company_by_id.json",
           "groups": "all",
           "route": "/companies/:id",
           "method": "get"
@@ -45,6 +52,13 @@
           "groups": "all",
           "route": "/companies",
           "method": "get"
+        },
+        {
+          "description": "Updating company",
+          "link": "companies/updating_company.json",
+          "groups": "all",
+          "route": "/companies/:id",
+          "method": "put"
         }
       ]
     }

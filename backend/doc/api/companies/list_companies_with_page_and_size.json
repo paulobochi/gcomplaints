@@ -34,14 +34,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec3d\",\n      \"name\": \"Herzog Inc\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec3e\",\n      \"name\": \"Hoeger, Turcotte and O'Kon\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec3f\",\n      \"name\": \"Reynolds, Borer and Herman\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec40\",\n      \"name\": \"Schultz, Pollich and Wolf\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec41\",\n      \"name\": \"Walsh-Casper\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
+      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf5476a53a6340b59865b09\",\n      \"name\": \"Rippin, Veum and Brekke\"\n    },\n    {\n      \"id\": \"5cf5476a53a6340b59865b0a\",\n      \"name\": \"Schroeder-Crist\"\n    },\n    {\n      \"id\": \"5cf5476a53a6340b59865b0b\",\n      \"name\": \"Wolf Group\"\n    },\n    {\n      \"id\": \"5cf5476a53a6340b59865b0c\",\n      \"name\": \"Koch Group\"\n    },\n    {\n      \"id\": \"5cf5476a53a6340b59865b0d\",\n      \"name\": \"Dietrich Inc\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"4e3fe388a97981b3a3035a2a314db242\"",
+        "ETag": "W/\"bb47a3b6b2afd8ba3dfe57ce922aa2d7\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "5b28ad96-42ed-4a30-acd9-f1d633e079b7",
-        "X-Runtime": "0.005015",
-        "Content-Length": "438"
+        "X-Request-Id": "652973e3-b49a-458b-9afa-e1e296584449",
+        "X-Runtime": "0.004694",
+        "Content-Length": "409"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"http://localhost:3000/companies?page=1&size=5\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

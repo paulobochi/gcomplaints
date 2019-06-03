@@ -60,6 +60,8 @@ resource :Companies do
   end
 
   post "/companies" do
+    parameter :name, "Company name"
+
     context "with required attributes" do
       example 'Creating a company' do
         company = {
@@ -113,6 +115,8 @@ resource :Companies do
   end
 
   put "/companies/:id" do
+    parameter :name, "Company name"
+
     context "when company exists" do
       let!(:company) { create(:company) }
       let(:id) { company.id }
