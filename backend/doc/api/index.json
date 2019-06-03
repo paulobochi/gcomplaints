@@ -1,0 +1,52 @@
+{
+  "resources": [
+    {
+      "name": "Companies",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Creating a company",
+          "link": "companies/creating_a_company.json",
+          "groups": "all",
+          "route": "/companies",
+          "method": "post"
+        },
+        {
+          "description": "Getting specific company",
+          "link": "companies/getting_specific_company.json",
+          "groups": "all",
+          "route": "/companies/:id",
+          "method": "get"
+        },
+        {
+          "description": "List companies",
+          "link": "companies/list_companies.json",
+          "groups": "all",
+          "route": "/companies",
+          "method": "get"
+        },
+        {
+          "description": "List companies filtered by name",
+          "link": "companies/list_companies_filtered_by_name.json",
+          "groups": "all",
+          "route": "/companies",
+          "method": "get"
+        },
+        {
+          "description": "List companies sorted by name asc",
+          "link": "companies/list_companies_sorted_by_name_asc.json",
+          "groups": "all",
+          "route": "/companies",
+          "method": "get"
+        },
+        {
+          "description": "List companies with page and size",
+          "link": "companies/list_companies_with_page_and_size.json",
+          "groups": "all",
+          "route": "/companies",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}

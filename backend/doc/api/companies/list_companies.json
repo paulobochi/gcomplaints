@@ -1,0 +1,41 @@
+{
+  "resource": "Companies",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/companies",
+  "description": "List companies",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/companies",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec33\",\n      \"name\": \"Braun, Wintheiser and Reinger\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec34\",\n      \"name\": \"Pollich-Auer\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec35\",\n      \"name\": \"Wilderman, Flatley and Windler\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec36\",\n      \"name\": \"Gleason Group\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec37\",\n      \"name\": \"Quitzon, Johnson and Ruecker\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec38\",\n      \"name\": \"Runolfsdottir-Fadel\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec39\",\n      \"name\": \"Nader, Kreiger and Halvorson\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec3a\",\n      \"name\": \"McDermott, Rowe and Price\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec3b\",\n      \"name\": \"Ziemann LLC\"\n    },\n    {\n      \"id\": \"5cf53ffd53a634029cd9ec3c\",\n      \"name\": \"Padberg, Grant and Gerhold\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"73e4000d56f0112887f7b801820c2d6d\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "180dfb15-4bbc-4db6-953f-a87054315575",
+        "X-Runtime": "0.011557",
+        "Content-Length": "784"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/companies\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

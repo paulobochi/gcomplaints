@@ -19,7 +19,7 @@ RSpec.configure do |config|
 
   DatabaseCleaner[:mongoid].strategy = :truncation
 
-  config.before(:example, :type => :model) do
+  config.before(:example) do
     DatabaseCleaner[:mongoid].clean
   end
 

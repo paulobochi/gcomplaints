@@ -1,0 +1,41 @@
+{
+  "resource": "Companies",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/companies/:id",
+  "description": "Getting specific company",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/companies/5cf53ffd53a634029cd9ec56",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"5cf53ffd53a634029cd9ec56\",\n  \"name\": \"Rohan, Huels and Kovacek\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"bfd269ac308da7baf53f6c9961c1481b\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "e9ca4eb1-829f-4726-acd9-69a240d3e752",
+        "X-Runtime": "0.001999",
+        "Content-Length": "67"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/companies/5cf53ffd53a634029cd9ec56\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}
