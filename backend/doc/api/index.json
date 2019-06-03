@@ -1,6 +1,47 @@
 {
   "resources": [
     {
+      "name": "Cities",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List cities",
+          "link": "cities/list_cities.json",
+          "groups": "all",
+          "route": "/cities",
+          "method": "get"
+        },
+        {
+          "description": "List cities filtered by name",
+          "link": "cities/list_cities_filtered_by_name.json",
+          "groups": "all",
+          "route": "/cities",
+          "method": "get"
+        },
+        {
+          "description": "List cities filtered by state",
+          "link": "cities/list_cities_filtered_by_state.json",
+          "groups": "all",
+          "route": "/cities",
+          "method": "get"
+        },
+        {
+          "description": "List cities sorted by name asc",
+          "link": "cities/list_cities_sorted_by_name_asc.json",
+          "groups": "all",
+          "route": "/cities",
+          "method": "get"
+        },
+        {
+          "description": "List cities with page and size",
+          "link": "cities/list_cities_with_page_and_size.json",
+          "groups": "all",
+          "route": "/cities",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "name": "Companies",
       "explanation": null,
       "examples": [

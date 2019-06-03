@@ -1,0 +1,41 @@
+{
+  "resource": "Cities",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/cities",
+  "description": "List cities",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/cities",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf565b053a63425066b9254\",\n      \"name\": \"Carmelitabury\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9253\",\n        \"name\": \"California\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b9257\",\n      \"name\": \"Burtton\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9256\",\n        \"name\": \"Nebraska\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b925a\",\n      \"name\": \"New Carisaside\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9259\",\n        \"name\": \"South Carolina\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b925d\",\n      \"name\": \"North Synthia\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b925c\",\n        \"name\": \"Iowa\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b9260\",\n      \"name\": \"Feeneymouth\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b925f\",\n        \"name\": \"Pennsylvania\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b9263\",\n      \"name\": \"North Antonia\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9262\",\n        \"name\": \"Montana\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b9266\",\n      \"name\": \"Erikchester\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9265\",\n        \"name\": \"Maryland\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b9269\",\n      \"name\": \"Ortizfort\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9268\",\n        \"name\": \"North Dakota\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b926c\",\n      \"name\": \"Ervinville\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b926b\",\n        \"name\": \"West Virginia\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b926f\",\n      \"name\": \"East Nadine\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b926e\",\n        \"name\": \"North Carolina\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"6e4e12b7343275f89c40a0c8da05f504\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "80435734-e5f9-4b77-afe3-4ddc5f233f0f",
+        "X-Runtime": "0.032501",
+        "Content-Length": "1294"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/cities\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

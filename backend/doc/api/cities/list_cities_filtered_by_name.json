@@ -1,0 +1,49 @@
+{
+  "resource": "Cities",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/cities",
+  "description": "List cities filtered by name",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "name",
+      "description": "Filter city by name"
+    },
+    {
+      "name": "state_id",
+      "description": "Filter city by state"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/cities?name=foz",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "name": "foz"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf565b053a63425066b9292\",\n      \"name\": \"Foz do Iguaçu\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b928f\",\n        \"name\": \"Paraná\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"ae962ddf1381ba11e789e0d0ff7a2bc7\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "9f6cc135-497c-4d37-8df6-ea7141c58f6e",
+        "X-Runtime": "0.009079",
+        "Content-Length": "236"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/cities?name=foz\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

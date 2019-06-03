@@ -1,0 +1,50 @@
+{
+  "resource": "Cities",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/cities",
+  "description": "List cities with page and size",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "page",
+      "description": "Page number"
+    },
+    {
+      "name": "size",
+      "description": "Per page maximum records"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/cities?page=1&size=5",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "page": "1",
+        "size": "5"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf565b053a63425066b9272\",\n      \"name\": \"West Columbus\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9271\",\n        \"name\": \"Texas\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b9275\",\n      \"name\": \"South Dongfort\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9274\",\n        \"name\": \"Vermont\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b9278\",\n      \"name\": \"Arronland\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9277\",\n        \"name\": \"Arizona\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b927b\",\n      \"name\": \"Justinport\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b927a\",\n        \"name\": \"Michigan\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b927e\",\n      \"name\": \"Bechtelarfort\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b927d\",\n        \"name\": \"Rhode Island\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"a41b9f3038357b71d05c700a9602fc1c\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "2d8c9eee-204a-4d11-956d-a0080a00b688",
+        "X-Runtime": "0.011561",
+        "Content-Length": "694"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/cities?page=1&size=5\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

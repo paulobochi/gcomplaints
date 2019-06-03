@@ -63,8 +63,7 @@ resource :States do
 
     describe "Sorting" do
       before {
-        country = create(:country)
-        create_list(:state, 10, country: country)
+        create_list(:state, 10)
       }
 
       parameter :sort, "Sort state by name asc or desc"

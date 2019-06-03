@@ -34,14 +34,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf55ffa53a6341e1b83277f\",\n      \"name\": \"Dibbert and Sons\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832780\",\n      \"name\": \"Casper-Boehm\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832781\",\n      \"name\": \"Zieme, Rowe and Reichel\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832782\",\n      \"name\": \"Harber-Heathcote\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832783\",\n      \"name\": \"Casper, Jacobs and Bahringer\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
+      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf565b053a63425066b92c8\",\n      \"name\": \"Thompson-Hane\"\n    },\n    {\n      \"id\": \"5cf565b053a63425066b92c9\",\n      \"name\": \"Monahan-Gerlach\"\n    },\n    {\n      \"id\": \"5cf565b053a63425066b92ca\",\n      \"name\": \"Bruen, Feest and Kshlerin\"\n    },\n    {\n      \"id\": \"5cf565b053a63425066b92cb\",\n      \"name\": \"Lubowitz, Connelly and Grimes\"\n    },\n    {\n      \"id\": \"5cf565b053a63425066b92cc\",\n      \"name\": \"Thiel-Hermiston\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"f9107f90777e56cbdce3da46f04197b9\"",
+        "ETag": "W/\"b6583a40fc22099f377d4236984eb62e\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "37e40c1c-1d3d-43c6-8a0e-1fe32e3d142d",
-        "X-Runtime": "0.004948",
-        "Content-Length": "434"
+        "X-Request-Id": "69a94820-8657-42f3-9cbf-04542e69c607",
+        "X-Runtime": "0.004543",
+        "Content-Length": "436"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"http://localhost:3000/companies?page=1&size=5\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

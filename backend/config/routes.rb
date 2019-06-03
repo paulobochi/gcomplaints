@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   resources :countries, only: :index
   resources :states, only: :index
+  resources :cities, only: :index
   resources :companies
 end

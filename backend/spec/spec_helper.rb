@@ -20,6 +20,7 @@ RSpec.configure do |config|
   DatabaseCleaner[:mongoid].strategy = :truncation
 
   config.before(:example) do
+    Faker::UniqueGenerator.clear
     DatabaseCleaner[:mongoid].clean
   end
 

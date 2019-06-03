@@ -33,13 +33,13 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"states\": [\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327e6\",\n      \"name\": \"Paraná\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327e4\",\n        \"name\": \"Brasil\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"states\": [\n    {\n      \"id\": \"5cf565b153a63425066b932f\",\n      \"name\": \"Paraná\",\n      \"country\": {\n        \"id\": \"5cf565b153a63425066b932d\",\n        \"name\": \"Brasil\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"8d58f1922ac7e3e5d04a2f22facc4c5c\"",
+        "ETag": "W/\"2e4a7b8fc34fcb9e05f4ae9569ad733b\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "57ac2985-04d0-4dea-9fa2-3abf124746b9",
-        "X-Runtime": "0.009146",
+        "X-Request-Id": "2fc2f084-eae0-4a31-a045-867c5e1f9cfe",
+        "X-Runtime": "0.008475",
         "Content-Length": "230"
       },
       "response_content_type": "application/json; charset=utf-8",
