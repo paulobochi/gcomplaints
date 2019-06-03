@@ -1,0 +1,45 @@
+{
+  "resource": "States",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/states",
+  "description": "List states sorted by name asc",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "sort",
+      "description": "Sort state by name asc or desc"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/states?sort=name+asc",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "sort": "name asc"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"states\": [\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327f7\",\n      \"name\": \"Bayerside\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327fc\",\n      \"name\": \"Bradtketon\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327fa\",\n      \"name\": \"Changbury\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327f8\",\n      \"name\": \"Darinton\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327fb\",\n      \"name\": \"East Salvatorefurt\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327f9\",\n      \"name\": \"Johnsonmouth\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327f6\",\n      \"name\": \"Lorehaven\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327f5\",\n      \"name\": \"Noreenland\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327f3\",\n      \"name\": \"North Todborough\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327f4\",\n      \"name\": \"South Lona\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327f2\",\n        \"name\": \"Peru\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"811254f4d01471c886e445ec5d4924db\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "aa8e4dc8-3b68-4cca-9100-26f14b3bc98b",
+        "X-Runtime": "0.017426",
+        "Content-Length": "1251"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/states?sort=name+asc\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

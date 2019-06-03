@@ -1,0 +1,49 @@
+{
+  "resource": "States",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/states",
+  "description": "List states filtered by country",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "name",
+      "description": "Filter state by name"
+    },
+    {
+      "name": "country_id",
+      "description": "Filter state by country"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/states?country_id=5cf55ffb53a6341e1b8327eb",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "country_id": "5cf55ffb53a6341e1b8327eb"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"states\": [\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327ed\",\n      \"name\": \"Paraná\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327eb\",\n        \"name\": \"Brasil\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327ee\",\n      \"name\": \"São Paulo\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327eb\",\n        \"name\": \"Brasil\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327ef\",\n      \"name\": \"Rio de Janeiro\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327eb\",\n        \"name\": \"Brasil\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 3,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"a8e719db829b9993abf28d8350381fd9\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "5127c530-1735-4f40-8155-6373e67af0c1",
+        "X-Runtime": "0.011350",
+        "Content-Length": "462"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/states?country_id=5cf55ffb53a6341e1b8327eb\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

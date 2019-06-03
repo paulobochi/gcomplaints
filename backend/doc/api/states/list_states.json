@@ -1,0 +1,41 @@
+{
+  "resource": "States",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/states",
+  "description": "List states",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/states",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"states\": [\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327bd\",\n      \"name\": \"Bretstad\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327bc\",\n        \"name\": \"Angola\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327bf\",\n      \"name\": \"East Selena\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327be\",\n        \"name\": \"Mauritius\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327c1\",\n      \"name\": \"Roobburgh\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327c0\",\n        \"name\": \"Comoros\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327c3\",\n      \"name\": \"West Antwanmouth\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327c2\",\n        \"name\": \"Colombia\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327c5\",\n      \"name\": \"Edytheberg\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327c4\",\n        \"name\": \"French Southern Territories\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327c7\",\n      \"name\": \"Rodrigostad\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327c6\",\n        \"name\": \"Nepal\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327c9\",\n      \"name\": \"North Carlynfurt\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327c8\",\n        \"name\": \"Estonia\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327cb\",\n      \"name\": \"Sipesmouth\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327ca\",\n        \"name\": \"Serbia\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327cd\",\n      \"name\": \"Lake Andreville\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327cc\",\n        \"name\": \"Lao People's Democratic Republic\"\n      }\n    },\n    {\n      \"id\": \"5cf55ffb53a6341e1b8327cf\",\n      \"name\": \"North Luann\",\n      \"country\": {\n        \"id\": \"5cf55ffb53a6341e1b8327ce\",\n        \"name\": \"Burundi\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"9f2fe4558d1fc0b3228264c5dcd854a0\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "448272d3-cd00-47c0-a268-11cbe918d5a1",
+        "X-Runtime": "0.024613",
+        "Content-Length": "1331"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/states\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

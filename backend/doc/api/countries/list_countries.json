@@ -1,0 +1,41 @@
+{
+  "resource": "Countries",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/countries",
+  "description": "List countries",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/countries",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"countries\": [\n    {\n      \"id\": \"5cf55ffa53a6341e1b83279b\",\n      \"name\": \"Slovenia\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b83279c\",\n      \"name\": \"Afghanistan\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b83279d\",\n      \"name\": \"Isle of Man\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b83279e\",\n      \"name\": \"Saint Vincent and the Grenadines\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b83279f\",\n      \"name\": \"Sao Tome and Principe\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a0\",\n      \"name\": \"United States Minor Outlying Islands\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a1\",\n      \"name\": \"Timor-Leste\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a2\",\n      \"name\": \"Tajikistan\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a3\",\n      \"name\": \"Poland\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a4\",\n      \"name\": \"Belarus\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"f3c4f40452337eaf24093ed6620cf642\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "a3c41c80-5064-4f5d-a806-1d9d9e00de2f",
+        "X-Runtime": "0.006125",
+        "Content-Length": "716"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/countries\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

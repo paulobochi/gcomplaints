@@ -29,14 +29,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf5476b53a6340b59865b1d\",\n      \"name\": \"Botsford-Jones\"\n    },\n    {\n      \"id\": \"5cf5476b53a6340b59865b17\",\n      \"name\": \"Hermann Inc\"\n    },\n    {\n      \"id\": \"5cf5476b53a6340b59865b1f\",\n      \"name\": \"Lang-Langworth\"\n    },\n    {\n      \"id\": \"5cf5476b53a6340b59865b1a\",\n      \"name\": \"Moen and Sons\"\n    },\n    {\n      \"id\": \"5cf5476b53a6340b59865b16\",\n      \"name\": \"O'Keefe-Cormier\"\n    },\n    {\n      \"id\": \"5cf5476b53a6340b59865b18\",\n      \"name\": \"Rau, Walter and Hills\"\n    },\n    {\n      \"id\": \"5cf5476b53a6340b59865b1c\",\n      \"name\": \"Stanton, Wuckert and Kshlerin\"\n    },\n    {\n      \"id\": \"5cf5476b53a6340b59865b1b\",\n      \"name\": \"Tremblay and Sons\"\n    },\n    {\n      \"id\": \"5cf5476b53a6340b59865b19\",\n      \"name\": \"Upton, Barton and Leannon\"\n    },\n    {\n      \"id\": \"5cf5476b53a6340b59865b1e\",\n      \"name\": \"Wehner, Donnelly and Conroy\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf55ffa53a6341e1b83278c\",\n      \"name\": \"Glover-Gleason\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832790\",\n      \"name\": \"Hahn Inc\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832792\",\n      \"name\": \"Howe LLC\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b83278d\",\n      \"name\": \"Jacobs, Gerhold and Spinka\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b83278e\",\n      \"name\": \"Jenkins Inc\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832791\",\n      \"name\": \"Murazik Group\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832793\",\n      \"name\": \"Ortiz-Williamson\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832794\",\n      \"name\": \"Strosin Group\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b832795\",\n      \"name\": \"Wintheiser, Paucek and Abshire\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b83278f\",\n      \"name\": \"Wunsch-Hirthe\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b95b23c2d827d862bc4dbca648ac3bde\"",
+        "ETag": "W/\"91f3981b28736fdb31a5ff06f507de33\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "c839ac76-8739-4b1e-a623-e549483e1d5f",
-        "X-Runtime": "0.005208",
-        "Content-Length": "749"
+        "X-Request-Id": "065a575b-5277-4135-9626-f6df81b697d6",
+        "X-Runtime": "0.006809",
+        "Content-Length": "715"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"http://localhost:3000/companies?sort=name+asc\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

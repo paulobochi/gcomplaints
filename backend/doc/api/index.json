@@ -61,6 +61,81 @@
           "method": "put"
         }
       ]
+    },
+    {
+      "name": "Countries",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List countries",
+          "link": "countries/list_countries.json",
+          "groups": "all",
+          "route": "/countries",
+          "method": "get"
+        },
+        {
+          "description": "List countries filtered by name",
+          "link": "countries/list_countries_filtered_by_name.json",
+          "groups": "all",
+          "route": "/countries",
+          "method": "get"
+        },
+        {
+          "description": "List countries sorted by name asc",
+          "link": "countries/list_countries_sorted_by_name_asc.json",
+          "groups": "all",
+          "route": "/countries",
+          "method": "get"
+        },
+        {
+          "description": "List countries with page and size",
+          "link": "countries/list_countries_with_page_and_size.json",
+          "groups": "all",
+          "route": "/countries",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "States",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List states",
+          "link": "states/list_states.json",
+          "groups": "all",
+          "route": "/states",
+          "method": "get"
+        },
+        {
+          "description": "List states filtered by country",
+          "link": "states/list_states_filtered_by_country.json",
+          "groups": "all",
+          "route": "/states",
+          "method": "get"
+        },
+        {
+          "description": "List states filtered by name",
+          "link": "states/list_states_filtered_by_name.json",
+          "groups": "all",
+          "route": "/states",
+          "method": "get"
+        },
+        {
+          "description": "List states sorted by name asc",
+          "link": "states/list_states_sorted_by_name_asc.json",
+          "groups": "all",
+          "route": "/states",
+          "method": "get"
+        },
+        {
+          "description": "List states with page and size",
+          "link": "states/list_states_with_page_and_size.json",
+          "groups": "all",
+          "route": "/states",
+          "method": "get"
+        }
+      ]
     }
   ]
 }

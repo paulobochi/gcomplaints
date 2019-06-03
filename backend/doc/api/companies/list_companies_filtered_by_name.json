@@ -29,13 +29,13 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf5476b53a6340b59865b15\",\n      \"name\": \"Reclame Aqui\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf55ffa53a6341e1b83278b\",\n      \"name\": \"Reclame Aqui\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"3b6a82b4dd0d36de5c3ca5d712d8e4a6\"",
+        "ETag": "W/\"8f438bd413c24b01fb6d936956a4d50e\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "29348865-cb90-4e58-9198-a638f899f150",
-        "X-Runtime": "0.006971",
+        "X-Request-Id": "535356ae-17b1-4475-89b4-689f86ec1106",
+        "X-Runtime": "0.007532",
         "Content-Length": "178"
       },
       "response_content_type": "application/json; charset=utf-8",

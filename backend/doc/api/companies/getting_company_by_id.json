@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/companies/5cf5476b53a6340b59865b22",
+      "request_path": "/companies/5cf55ffa53a6341e1b832798",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -25,17 +25,17 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5cf5476b53a6340b59865b22\",\n  \"name\": \"Volkman-Bergnaum\"\n}",
+      "response_body": "{\n  \"id\": \"5cf55ffa53a6341e1b832798\",\n  \"name\": \"Wolff, Morar and Marquardt\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"dcc4d12408ca435c5830df59b48de31f\"",
+        "ETag": "W/\"4bb38cc89971d9e207d3500be5385a29\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "fb219457-1ed2-42b1-9923-6755083806cd",
-        "X-Runtime": "0.001971",
-        "Content-Length": "59"
+        "X-Request-Id": "26c60404-418f-4ca7-963f-23b35343bb57",
+        "X-Runtime": "0.002096",
+        "Content-Length": "69"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/companies/5cf5476b53a6340b59865b22\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/companies/5cf55ffa53a6341e1b832798\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

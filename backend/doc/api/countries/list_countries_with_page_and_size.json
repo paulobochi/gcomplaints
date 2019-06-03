@@ -1,0 +1,50 @@
+{
+  "resource": "Countries",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/countries",
+  "description": "List countries with page and size",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "page",
+      "description": "Page number"
+    },
+    {
+      "name": "size",
+      "description": "Per page maximum records"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/countries?page=1&size=5",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "page": "1",
+        "size": "5"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"countries\": [\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a5\",\n      \"name\": \"Venezuela\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a6\",\n      \"name\": \"Solomon Islands\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a7\",\n      \"name\": \"Argentina\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a8\",\n      \"name\": \"Iraq\"\n    },\n    {\n      \"id\": \"5cf55ffa53a6341e1b8327a9\",\n      \"name\": \"Slovakia (Slovak Republic)\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"b484907a1353a96905f952315c8d7639\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "3af6d941-ed9e-4e5a-a668-c4eca7ed54ad",
+        "X-Runtime": "0.004662",
+        "Content-Length": "402"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/countries?page=1&size=5\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}
