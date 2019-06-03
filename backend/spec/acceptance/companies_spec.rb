@@ -64,11 +64,9 @@ resource :Companies do
 
     context "with required attributes" do
       example 'Creating a company' do
-        company = {
-          name: "Company Test"
-        }
+        company = build(:company)
+        do_request(company.attributes)
 
-        do_request(company)
         expect(status).to eq(200)
         expect(json["name"]).to eq(company[:name])
         expect(json["id"]).to be_present
@@ -86,11 +84,9 @@ resource :Companies do
       before { create(:company, name: "Company Test")}
 
       example 'Creating a company with already taken name', document: false do
-        company = {
-          name: "Company Test"
-        }
+        company = build(:company, name: "Company Test")
+        do_request(company.attributes)
 
-        do_request(company)
         expect(status).to eq(422)
       end
     end
@@ -123,7 +119,7 @@ resource :Companies do
 
       example 'Updating company' do
         company.name = "New Company Name"
-        do_request(CompanySerializer.new(company).attributes)
+        do_request(company.attributes)
 
         expect(status).to eq(200)
         expect(json).to include_json(CompanySerializer.new(company).attributes)

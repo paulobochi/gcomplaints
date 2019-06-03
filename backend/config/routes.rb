@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :states, only: :index
   resources :cities, only: :index
   resources :companies
+  resources :complaints
 end
