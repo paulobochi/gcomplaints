@@ -1,9 +1,9 @@
 {
-  "resource": "Companies",
+  "resource": "Complaints",
   "resource_explanation": null,
   "http_method": "DELETE",
-  "route": "/companies/:id",
-  "description": "Deleting company",
+  "route": "/complaints/:id",
+  "description": "Delete complaint",
   "explanation": null,
   "parameters": [
 
@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/companies/5cf565b053a63425066b92e3",
+      "request_path": "/complaints/5cf586c153a63446b014645e",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -29,11 +29,11 @@
       "response_body": null,
       "response_headers": {
         "Cache-Control": "no-cache",
-        "X-Request-Id": "b72517e0-cb27-4edd-958e-113c82525b2c",
-        "X-Runtime": "0.003798"
+        "X-Request-Id": "ab8d76a7-c56f-4368-88fa-b346b74a6e7e",
+        "X-Runtime": "0.002683"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/companies/5cf565b053a63425066b92e3\" -d '' -X DELETE \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/complaints/5cf586c153a63446b014645e\" -d '' -X DELETE \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

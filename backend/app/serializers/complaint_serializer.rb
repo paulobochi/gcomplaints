@@ -3,8 +3,4 @@ class ComplaintSerializer < ActiveModel::Serializer
 
   belongs_to :city
   belongs_to :company
-
-  def id
-    object.id&.to_s
-  end
 end

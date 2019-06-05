@@ -1,0 +1,53 @@
+{
+  "resource": "Complaints",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/complaints/:id",
+  "description": "Update complaint",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "title",
+      "description": "Complaint title"
+    },
+    {
+      "name": "description",
+      "description": "Complaint description"
+    },
+    {
+      "name": "company_id",
+      "description": "Company id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/complaints/5cf586c153a63446b0146458",
+      "request_body": "_id=5cf586c153a63446b0146458&title=New+Title&description=New+description+of+complaint&company_id=5cf586c153a63446b014645c&city_id=5cf586c153a63446b014645b&updated_at=2019-06-03+20%3A44%3A49+UTC&created_at=2019-06-03+20%3A44%3A49+UTC",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"5cf586c153a63446b0146458\",\n  \"title\": \"New Title\",\n  \"description\": \"New description of complaint\",\n  \"city\": {\n    \"id\": \"5cf586c153a63446b014645b\",\n    \"name\": \"Cristenmouth\"\n  },\n  \"company\": {\n    \"id\": \"5cf586c153a63446b014645c\",\n    \"name\": \"Harber LLC\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"c10de39818eb9e778b9d04fe85a2599d\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "83a9abca-0f6a-4c44-a97b-16ab09e1e89b",
+        "X-Runtime": "0.006140",
+        "Content-Length": "225"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/complaints/5cf586c153a63446b0146458\" -d '_id=5cf586c153a63446b0146458&title=New+Title&description=New+description+of+complaint&company_id=5cf586c153a63446b014645c&city_id=5cf586c153a63446b014645b&updated_at=2019-06-03+20%3A44%3A49+UTC&created_at=2019-06-03+20%3A44%3A49+UTC' -X PUT \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

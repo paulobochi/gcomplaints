@@ -1,9 +1,9 @@
 {
   "resource": "Companies",
   "resource_explanation": null,
-  "http_method": "PUT",
-  "route": "/companies/:id",
-  "description": "Updating company",
+  "http_method": "POST",
+  "route": "/companies",
+  "description": "Create a company",
   "explanation": null,
   "parameters": [
     {
@@ -16,9 +16,9 @@
   ],
   "requests": [
     {
-      "request_method": "PUT",
-      "request_path": "/companies/5cf565b053a63425066b92e2",
-      "request_body": "name=New+Company+Name",
+      "request_method": "POST",
+      "request_path": "/companies",
+      "request_body": "_id=5cf586c053a63446b0146272&name=Hauck%2C+Friesen+and+Grimes",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -29,17 +29,17 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5cf565b053a63425066b92e2\",\n  \"name\": \"New Company Name\"\n}",
+      "response_body": "{\n  \"id\": \"5cf586c053a63446b0146273\",\n  \"name\": \"Hauck, Friesen and Grimes\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"830deed9c72bde789fbd84cf3d2b0a54\"",
+        "ETag": "W/\"6e2b280ea50f8c99b52ae302bf63bec0\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "3cdb94ba-a4dc-4e57-a6f7-758a755fa74f",
-        "X-Runtime": "0.004826",
-        "Content-Length": "59"
+        "X-Request-Id": "b3e01ed2-08b0-4417-abf1-161d00209fa6",
+        "X-Runtime": "0.005947",
+        "Content-Length": "68"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:3000/companies/5cf565b053a63425066b92e2\" -d 'name=New+Company+Name' -X PUT \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/companies\" -d '_id=5cf586c053a63446b0146272&name=Hauck%2C+Friesen+and+Grimes' -X POST \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "resource": "Complaints",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/complaints/:id",
+  "description": "Get complaint by id",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/complaints/5cf586c153a63446b0146453",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"5cf586c153a63446b0146453\",\n  \"title\": \"Et hic fuga ullam.\",\n  \"description\": \"Dolores ut omnis. Magni quaerat voluptas. Doloribus recusandae nihil.\",\n  \"city\": {\n    \"id\": \"5cf586c153a63446b0146456\",\n    \"name\": \"Jakubowskichester\"\n  },\n  \"company\": {\n    \"id\": \"5cf586c153a63446b0146452\",\n    \"name\": \"Okuneva, Predovic and Jacobs\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"cc8c3ef19f66299ce7dd52d4503dd1fa\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "07f74afd-6409-4773-888d-cac665c31843",
+        "X-Runtime": "0.004329",
+        "Content-Length": "298"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/complaints/5cf586c153a63446b0146453\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "resource_explanation": null,
   "http_method": "GET",
   "route": "/companies/:id",
-  "description": "Getting company by id",
+  "description": "Get company by id",
   "explanation": null,
   "parameters": [
 
@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/companies/5cf565b053a63425066b92e1",
+      "request_path": "/companies/5cf586c053a63446b0146276",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -25,17 +25,17 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5cf565b053a63425066b92e1\",\n  \"name\": \"O'Hara, Lang and Rosenbaum\"\n}",
+      "response_body": "{\n  \"id\": \"5cf586c053a63446b0146276\",\n  \"name\": \"Hilll and Sons\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b809aba713bd0e46bf2431807c04fd59\"",
+        "ETag": "W/\"92839078aec8942988b80c15342f842b\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "b5372511-8719-4c49-a0ef-ea74f681638f",
-        "X-Runtime": "0.002057",
-        "Content-Length": "69"
+        "X-Request-Id": "8496b85b-6838-43fa-9db8-a06bf0f80a7f",
+        "X-Runtime": "0.002215",
+        "Content-Length": "57"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/companies/5cf565b053a63425066b92e1\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/companies/5cf586c053a63446b0146276\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

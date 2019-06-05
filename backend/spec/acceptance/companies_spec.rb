@@ -63,7 +63,7 @@ resource :Companies do
     parameter :name, "Company name"
 
     context "with required attributes" do
-      example 'Creating a company' do
+      example 'Create a company' do
         company = build(:company)
         do_request(company.attributes)
 
@@ -74,7 +74,7 @@ resource :Companies do
     end
 
     context "without required attributes" do
-      example 'Creating a company without name', document: false do
+      example 'Create a company without name', document: false do
         do_request
         expect(status).to eq(422)
       end
@@ -83,7 +83,7 @@ resource :Companies do
     context "with already taken name" do
       before { create(:company, name: "Company Test")}
 
-      example 'Creating a company with already taken name', document: false do
+      example 'Create a company with already taken name', document: false do
         company = build(:company, name: "Company Test")
         do_request(company.attributes)
 
@@ -96,15 +96,15 @@ resource :Companies do
     context "when company exists" do
       let!(:company) { create(:company) }
 
-      example 'Getting company by id' do
+      example 'Get company by id' do
         do_request(id: company.id)
         expect(status).to eq(200)
-        expect(json).to include_json(CompanySerializer.new(company).attributes)
+        expect(json).to include_json(CompanySerializer.new(company).attributes.as_json)
       end
     end
 
     context "when company not exists" do
-      example 'Getting company by id', document: false do
+      example 'Get company by id', document: false do
         expect{ do_request(id: 1) }.to raise_exception(Mongoid::Errors::DocumentNotFound)
       end
     end
@@ -117,17 +117,17 @@ resource :Companies do
       let!(:company) { create(:company) }
       let(:id) { company.id }
 
-      example 'Updating company' do
+      example 'Update company' do
         company.name = "New Company Name"
         do_request(company.attributes)
 
         expect(status).to eq(200)
-        expect(json).to include_json(CompanySerializer.new(company).attributes)
+        expect(json).to include_json(CompanySerializer.new(company).attributes.as_json)
       end
     end
 
     context "when company not exists" do
-      example 'Updating company', document: false do
+      example 'Update company', document: false do
         expect{ do_request(id: 1) }.to raise_exception(Mongoid::Errors::DocumentNotFound)
       end
     end
@@ -138,7 +138,7 @@ resource :Companies do
       let!(:company) { create(:company) }
       let(:id) { company.id }
 
-      example 'Deleting company' do
+      example 'Delete company' do
         do_request
 
         expect(status).to eq(204)
@@ -146,7 +146,7 @@ resource :Companies do
     end
 
     context "when company not exists" do
-      example 'Deleting company', document: false do
+      example 'Delete company', document: false do
         expect{ do_request(id: 1) }.to raise_exception(Mongoid::Errors::DocumentNotFound)
       end
     end

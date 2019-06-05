@@ -1,0 +1,41 @@
+{
+  "resource": "Complaints",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/complaints",
+  "description": "List complaints",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/complaints",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"complaints\": [\n    {\n      \"id\": \"5cf586c053a63446b014627a\",\n      \"title\": \"Ea veniam et tenetur.\",\n      \"description\": \"Iusto voluptatem eveniet. Iusto reiciendis repudiandae. Voluptate omnis doloribus.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b014627d\",\n        \"name\": \"South Forest\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b0146279\",\n        \"name\": \"Grady, Hagenes and Macejkovic\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b014627f\",\n      \"title\": \"Vel et expedita quisquam.\",\n      \"description\": \"Quo et iusto. Amet fugit dolor. Necessitatibus nobis a.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b0146282\",\n        \"name\": \"Shaynemouth\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b014627e\",\n        \"name\": \"Lemke-Kovacek\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146284\",\n      \"title\": \"Tempore aut incidunt reprehenderit.\",\n      \"description\": \"Voluptas voluptatem nesciunt. Dicta ut vel. Ut ratione adipisci.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b0146287\",\n        \"name\": \"Haucktown\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b0146283\",\n        \"name\": \"Von-Grady\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146289\",\n      \"title\": \"Et rerum quo praesentium.\",\n      \"description\": \"Et hic eum. Ut occaecati et. Non quis nihil.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b014628c\",\n        \"name\": \"Willmsfurt\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b0146288\",\n        \"name\": \"McDermott Inc\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b014628e\",\n      \"title\": \"Aut eligendi odio suscipit.\",\n      \"description\": \"Ut tempora et. Quia et qui. Consequatur laudantium quis.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b0146291\",\n        \"name\": \"Lake Lannychester\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b014628d\",\n        \"name\": \"Armstrong LLC\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146293\",\n      \"title\": \"Repellat neque et molestias.\",\n      \"description\": \"Tempora laboriosam rerum. Qui optio aut. Est aut quas.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b0146296\",\n        \"name\": \"Lake Maryjo\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b0146292\",\n        \"name\": \"Nienow, Pollich and Kohler\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146298\",\n      \"title\": \"Quos sit perspiciatis et.\",\n      \"description\": \"Dignissimos doloremque rem. Sint non accusamus. Repellendus harum molestias.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b014629b\",\n        \"name\": \"Jastton\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b0146297\",\n        \"name\": \"Murray, Schmeler and Cummings\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b014629d\",\n      \"title\": \"In sed aliquid illum.\",\n      \"description\": \"Doloribus magni ullam. Fugiat quisquam laudantium. Similique vero eos.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b01462a0\",\n        \"name\": \"Bartonton\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b014629c\",\n        \"name\": \"Sawayn, Jacobson and Pfeffer\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b01462a2\",\n      \"title\": \"Labore omnis ea autem.\",\n      \"description\": \"Fuga eum incidunt. Deleniti odio sunt. Libero cumque unde.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b01462a5\",\n        \"name\": \"South Arthur\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b01462a1\",\n        \"name\": \"Schaefer-Osinski\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b01462a7\",\n      \"title\": \"Qui aut officia sequi.\",\n      \"description\": \"Illum rerum totam. Harum expedita sit. Quia sunt nulla.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b01462aa\",\n        \"name\": \"South Angle\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b01462a6\",\n        \"name\": \"Abernathy LLC\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"59d6269a19df6cd5a5a13efe0fed950d\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "797f17fe-9731-4049-88c0-937faee459fc",
+        "X-Runtime": "0.028821",
+        "Content-Length": "2957"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/complaints\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

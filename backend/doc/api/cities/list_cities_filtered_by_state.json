@@ -21,29 +21,29 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/cities?state_id=5cf565b053a63425066b9298",
+      "request_path": "/cities?state_id=5cf586bf53a63446b014622b",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "state_id": "5cf565b053a63425066b9298"
+        "state_id": "5cf586bf53a63446b014622b"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf565b053a63425066b929b\",\n      \"name\": \"Foz do Iguaçu\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9298\",\n        \"name\": \"Paraná\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b929c\",\n      \"name\": \"Cascavel\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9298\",\n        \"name\": \"Paraná\"\n      }\n    },\n    {\n      \"id\": \"5cf565b053a63425066b929d\",\n      \"name\": \"Curitiba\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b9298\",\n        \"name\": \"Paraná\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 3,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf586bf53a63446b014622e\",\n      \"name\": \"Foz do Iguaçu\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b014622b\",\n        \"name\": \"Paraná\"\n      }\n    },\n    {\n      \"id\": \"5cf586bf53a63446b014622f\",\n      \"name\": \"Cascavel\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b014622b\",\n        \"name\": \"Paraná\"\n      }\n    },\n    {\n      \"id\": \"5cf586bf53a63446b0146230\",\n      \"name\": \"Curitiba\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b014622b\",\n        \"name\": \"Paraná\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 3,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"30987ee076707183a1b2f2b5de522c66\"",
+        "ETag": "W/\"ffb2f8cf817f238e452dac7e91a87ace\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "4c4afc85-ecdc-4625-84df-85b10c8534e0",
-        "X-Runtime": "0.011926",
+        "X-Request-Id": "3df984b0-7c61-4d58-bcc1-e018b730826e",
+        "X-Runtime": "0.011775",
         "Content-Length": "458"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/cities?state_id=5cf565b053a63425066b9298\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/cities?state_id=5cf586bf53a63446b014622b\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

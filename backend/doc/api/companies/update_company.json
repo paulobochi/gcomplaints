@@ -1,0 +1,45 @@
+{
+  "resource": "Companies",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/companies/:id",
+  "description": "Update company",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "name",
+      "description": "Company name"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/companies/5cf586c053a63446b0146277",
+      "request_body": "_id=5cf586c053a63446b0146277&name=New+Company+Name&updated_at=2019-06-03+20%3A44%3A48+UTC&created_at=2019-06-03+20%3A44%3A48+UTC",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"5cf586c053a63446b0146277\",\n  \"name\": \"New Company Name\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"07aed3cc7b6b4bc8aac05a141efd1584\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "96e6e37a-beac-4ac0-820f-e47b980a90fe",
+        "X-Runtime": "0.005246",
+        "Content-Length": "59"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/companies/5cf586c053a63446b0146277\" -d '_id=5cf586c053a63446b0146277&name=New+Company+Name&updated_at=2019-06-03+20%3A44%3A48+UTC&created_at=2019-06-03+20%3A44%3A48+UTC' -X PUT \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

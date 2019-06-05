@@ -1,0 +1,57 @@
+{
+  "resource": "Complaints",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/complaints",
+  "description": "List complaints filtered by city",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "company_id",
+      "description": "Filter complaints by company"
+    },
+    {
+      "name": "country_id",
+      "description": "Filter complaints by country"
+    },
+    {
+      "name": "state_id",
+      "description": "Filter complaints by state"
+    },
+    {
+      "name": "city_id",
+      "description": "Filter complaints by city"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/complaints?city_id=5cf586c153a63446b01463c6",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "city_id": "5cf586c153a63446b01463c6"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"complaints\": [\n    {\n      \"id\": \"5cf586c153a63446b01463cc\",\n      \"title\": \"Labore corrupti voluptates tenetur.\",\n      \"description\": \"Quia aperiam dolorem. Aut enim in. Odio eum et.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463cd\",\n      \"title\": \"Delectus vel et assumenda.\",\n      \"description\": \"Dicta qui eum. Officiis et est. Autem voluptatem necessitatibus.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463ce\",\n      \"title\": \"Delectus aut harum ipsam.\",\n      \"description\": \"Debitis consequatur repudiandae. Eum qui est. Amet ea dolorum.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463cf\",\n      \"title\": \"Ab incidunt porro ex.\",\n      \"description\": \"Suscipit voluptatem fuga. Consequatur iste dolores. Et provident rerum.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d0\",\n      \"title\": \"Qui veniam eius qui.\",\n      \"description\": \"Asperiores minima sunt. Est qui ipsa. Non delectus aut.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d1\",\n      \"title\": \"Illum omnis quidem officia.\",\n      \"description\": \"Minus expedita reiciendis. Et sit assumenda. Voluptas ut autem.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d2\",\n      \"title\": \"Nulla aut eos esse.\",\n      \"description\": \"Minima voluptatem quasi. Sunt modi sint. Officia et ipsum.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d3\",\n      \"title\": \"Id reiciendis ipsa suscipit.\",\n      \"description\": \"Omnis quia dolorem. Alias eius et. Odio ut tenetur.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d4\",\n      \"title\": \"Velit qui sit repudiandae.\",\n      \"description\": \"Reiciendis enim eum. Placeat asperiores ab. Fugit perspiciatis accusantium.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d5\",\n      \"title\": \"Amet eligendi qui hic.\",\n      \"description\": \"Sed temporibus facilis. Aut voluptas deleniti. Cum minus repudiandae.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d6\",\n      \"title\": \"Delectus laboriosam quia minus.\",\n      \"description\": \"Aliquid quibusdam hic. Nisi corrupti aspernatur. Corrupti alias quo.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d7\",\n      \"title\": \"Nesciunt est sapiente possimus.\",\n      \"description\": \"Omnis voluptatem praesentium. Iste in dicta. Quia iste illo.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d8\",\n      \"title\": \"Possimus nulla itaque earum.\",\n      \"description\": \"Ratione ipsam magni. Voluptatem et nisi. Eum voluptas ut.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463d9\",\n      \"title\": \"Libero dolorem perspiciatis sapiente.\",\n      \"description\": \"Sit nulla assumenda. Sint nostrum officiis. Ut nesciunt qui.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463da\",\n      \"title\": \"Molestiae autem voluptatem ut.\",\n      \"description\": \"Expedita aut nihil. Et repudiandae et. Tempora quisquam est.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463db\",\n      \"title\": \"Qui ratione minus quia.\",\n      \"description\": \"Praesentium architecto aut. Iure ut quas. At consectetur similique.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463dc\",\n      \"title\": \"Sapiente sit rerum cum.\",\n      \"description\": \"Sint beatae cumque. Non aut ex. Nostrum ex cupiditate.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463dd\",\n      \"title\": \"Recusandae tenetur eveniet non.\",\n      \"description\": \"Illum est placeat. Nisi ipsa aperiam. Quidem sit esse.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463de\",\n      \"title\": \"Delectus maiores iusto beatae.\",\n      \"description\": \"Recusandae vel ut. Ducimus voluptatem facere. Inventore tenetur laboriosam.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01463df\",\n      \"title\": \"Assumenda velit ut quia.\",\n      \"description\": \"Excepturi nisi suscipit. Et eos enim. Dignissimos quo voluptas.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b01463c6\",\n        \"name\": \"Foz do Iguaçu\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b01463ca\",\n        \"name\": \"Grimes-Mante\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 20,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"0bb33d5f888edc7a8f9d17fa995f1a47\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "e39978e8-633c-4788-b0df-527f5f0fe013",
+        "X-Runtime": "0.053449",
+        "Content-Length": "5754"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/complaints?city_id=5cf586c153a63446b01463c6\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

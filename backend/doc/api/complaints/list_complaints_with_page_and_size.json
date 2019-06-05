@@ -1,0 +1,50 @@
+{
+  "resource": "Complaints",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/complaints",
+  "description": "List complaints with page and size",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "page",
+      "description": "Page number"
+    },
+    {
+      "name": "size",
+      "description": "Per page maximum records"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/complaints?page=1&size=5",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "page": "1",
+        "size": "5"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"complaints\": [\n    {\n      \"id\": \"5cf586c053a63446b01462ac\",\n      \"title\": \"Corrupti qui quidem dolorem.\",\n      \"description\": \"Facere hic fuga. Sint libero repellat. Ab dolorum sed.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b01462af\",\n        \"name\": \"Blockstad\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b01462ab\",\n        \"name\": \"Baumbach-Johnston\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b01462b1\",\n      \"title\": \"Ratione neque et voluptatum.\",\n      \"description\": \"Tempore vel vero. Quis quod labore. Asperiores ut laudantium.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b01462b4\",\n        \"name\": \"Marvinside\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b01462b0\",\n        \"name\": \"Langosh and Sons\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b01462b6\",\n      \"title\": \"Error ut et maxime.\",\n      \"description\": \"Culpa in non. Alias perferendis qui. Aut ea ab.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b01462b9\",\n        \"name\": \"Port Analisa\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b01462b5\",\n        \"name\": \"Labadie-Crona\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b01462bb\",\n      \"title\": \"Odio unde laudantium omnis.\",\n      \"description\": \"Amet qui ut. In enim enim. Dolor est ipsam.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b01462be\",\n        \"name\": \"Port Christi\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b01462ba\",\n        \"name\": \"Feest, Kutch and Schaden\"\n      }\n    },\n    {\n      \"id\": \"5cf586c053a63446b01462c0\",\n      \"title\": \"Reprehenderit aperiam excepturi aliquam.\",\n      \"description\": \"Non alias ab. Est minima labore. Ab ut minima.\",\n      \"city\": {\n        \"id\": \"5cf586c053a63446b01462c3\",\n        \"name\": \"Nickyberg\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c053a63446b01462bf\",\n        \"name\": \"Jones-Kshlerin\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"a60429f80c5c22382bf553898911a4fe\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "19f60df6-c5d3-4394-8d2b-62b739fa8d81",
+        "X-Runtime": "0.014984",
+        "Content-Length": "1484"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/complaints?page=1&size=5\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

@@ -45,7 +45,7 @@ class ComplaintsController < ApplicationController
   end
 
   def complaint_params
-    params.permit(:title, :description, :company_id)
+    params.permit(:title, :description, :company_id, coordinates: [])
   end
 
   def query_params

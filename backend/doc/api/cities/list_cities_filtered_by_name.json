@@ -33,13 +33,13 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf565b053a63425066b9292\",\n      \"name\": \"Foz do Iguaçu\",\n      \"state\": {\n        \"id\": \"5cf565b053a63425066b928f\",\n        \"name\": \"Paraná\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf586bf53a63446b0146225\",\n      \"name\": \"Foz do Iguaçu\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b0146222\",\n        \"name\": \"Paraná\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"ae962ddf1381ba11e789e0d0ff7a2bc7\"",
+        "ETag": "W/\"b6d12bdb6b1618981217f29d1dc26921\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "9f6cc135-497c-4d37-8df6-ea7141c58f6e",
-        "X-Runtime": "0.009079",
+        "X-Request-Id": "55891303-7169-4757-b14b-006591399431",
+        "X-Runtime": "0.008315",
         "Content-Length": "236"
       },
       "response_content_type": "application/json; charset=utf-8",

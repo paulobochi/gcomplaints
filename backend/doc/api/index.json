@@ -46,22 +46,22 @@
       "explanation": null,
       "examples": [
         {
-          "description": "Creating a company",
-          "link": "companies/creating_a_company.json",
+          "description": "Create a company",
+          "link": "companies/create_a_company.json",
           "groups": "all",
           "route": "/companies",
           "method": "post"
         },
         {
-          "description": "Deleting company",
-          "link": "companies/deleting_company.json",
+          "description": "Delete company",
+          "link": "companies/delete_company.json",
           "groups": "all",
           "route": "/companies/:id",
           "method": "delete"
         },
         {
-          "description": "Getting company by id",
-          "link": "companies/getting_company_by_id.json",
+          "description": "Get company by id",
+          "link": "companies/get_company_by_id.json",
           "groups": "all",
           "route": "/companies/:id",
           "method": "get"
@@ -95,10 +95,86 @@
           "method": "get"
         },
         {
-          "description": "Updating company",
-          "link": "companies/updating_company.json",
+          "description": "Update company",
+          "link": "companies/update_company.json",
           "groups": "all",
           "route": "/companies/:id",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Complaints",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Delete complaint",
+          "link": "complaints/delete_complaint.json",
+          "groups": "all",
+          "route": "/complaints/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Get complaint by id",
+          "link": "complaints/get_complaint_by_id.json",
+          "groups": "all",
+          "route": "/complaints/:id",
+          "method": "get"
+        },
+        {
+          "description": "List complaints",
+          "link": "complaints/list_complaints.json",
+          "groups": "all",
+          "route": "/complaints",
+          "method": "get"
+        },
+        {
+          "description": "List complaints filtered by city",
+          "link": "complaints/list_complaints_filtered_by_city.json",
+          "groups": "all",
+          "route": "/complaints",
+          "method": "get"
+        },
+        {
+          "description": "List complaints filtered by company",
+          "link": "complaints/list_complaints_filtered_by_company.json",
+          "groups": "all",
+          "route": "/complaints",
+          "method": "get"
+        },
+        {
+          "description": "List complaints filtered by country",
+          "link": "complaints/list_complaints_filtered_by_country.json",
+          "groups": "all",
+          "route": "/complaints",
+          "method": "get"
+        },
+        {
+          "description": "List complaints filtered by state",
+          "link": "complaints/list_complaints_filtered_by_state.json",
+          "groups": "all",
+          "route": "/complaints",
+          "method": "get"
+        },
+        {
+          "description": "List complaints sorted by name asc",
+          "link": "complaints/list_complaints_sorted_by_name_asc.json",
+          "groups": "all",
+          "route": "/complaints",
+          "method": "get"
+        },
+        {
+          "description": "List complaints with page and size",
+          "link": "complaints/list_complaints_with_page_and_size.json",
+          "groups": "all",
+          "route": "/complaints",
+          "method": "get"
+        },
+        {
+          "description": "Update complaint",
+          "link": "complaints/update_complaint.json",
+          "groups": "all",
+          "route": "/complaints/:id",
           "method": "put"
         }
       ]

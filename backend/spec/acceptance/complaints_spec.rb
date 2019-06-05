@@ -109,35 +109,35 @@ resource :Complaints do
     let!(:company) { create(:company) }
 
     context "with required attributes" do
-      example 'Creating a complaint' do
-        complaint = build(:complaint, company: company)
+      example 'Create a complaint' do
+        complaint = build(:complaint, company: company, city: nil)
         do_request(complaint.attributes)
 
         expect(status).to eq(200)
         expect(json["title"]).to eq(complaint.title)
         expect(json["description"]).to eq(complaint.description)
-        expect(json["company"]).to be_present
-        expect(json["company"]["id"]).to eq(company.id)
+        expect(json["company"]["id"]).to eq(company.id.as_json)
+        expect(json["city"]["id"]).to be_present
         expect(json["id"]).to be_present
       end
     end
 
     context "without required attributes" do
-      example 'Creating a complaint without title', document: false do
+      example 'Create a complaint without title', document: false do
         complaint = build(:complaint, title: nil, company: company)
         do_request(complaint.attributes)
 
         expect(status).to eq(422)
       end
 
-      example 'Creating a complaint without description', document: false do
+      example 'Create a complaint without description', document: false do
         complaint = build(:complaint, description: nil, company: company)
         do_request(complaint.attributes)
 
         expect(status).to eq(422)
       end
 
-      example 'Creating a complaint without company', document: false do
+      example 'Create a complaint without company', document: false do
         complaint = build(:complaint, company: nil)
         do_request(complaint.attributes)
 
@@ -150,15 +150,15 @@ resource :Complaints do
     context "when complaint exists" do
       let!(:complaint) { create(:complaint) }
 
-      example 'Getting complaint by id' do
+      example 'Get complaint by id' do
         do_request(id: complaint.id)
         expect(status).to eq(200)
-        expect(json).to include_json(ComplaintSerializer.new(complaint).attributes)
+        expect(json).to include_json(ComplaintSerializer.new(complaint).attributes.as_json)
       end
     end
 
     context "when complaint not exists" do
-      example 'Getting complaint by id', document: false do
+      example 'Get complaint by id', document: false do
         expect{ do_request(id: 1) }.to raise_exception(Mongoid::Errors::DocumentNotFound)
       end
     end
@@ -174,7 +174,7 @@ resource :Complaints do
       let!(:company) { create(:company) }
       let(:id) { complaint.id }
 
-      example 'Updating complaint' do
+      example 'Update complaint' do
         complaint.title = "New Title"
         complaint.description = "New description of complaint"
         complaint.company = company
@@ -185,7 +185,7 @@ resource :Complaints do
     end
 
     context "when complaint not exists" do
-      example 'Updating complaint', document: false do
+      example 'Update complaint', document: false do
         expect{ do_request(id: 1) }.to raise_exception(Mongoid::Errors::DocumentNotFound)
       end
     end
@@ -196,7 +196,7 @@ resource :Complaints do
       let!(:complaint) { create(:complaint) }
       let(:id) { complaint.id }
 
-      example 'Deleting complaint' do
+      example 'Delete complaint' do
         do_request
 
         expect(status).to eq(204)
@@ -204,7 +204,7 @@ resource :Complaints do
     end
 
     context "when complaint not exists" do
-      example 'Deleting complaint', document: false do
+      example 'Delete complaint', document: false do
         expect{ do_request(id: 1) }.to raise_exception(Mongoid::Errors::DocumentNotFound)
       end
     end

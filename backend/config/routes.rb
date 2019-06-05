@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  mount Raddocs::App => "/api_docs"
+  mount Raddocs::App => "/docs"
 
   resources :countries, only: :index
   resources :states, only: :index

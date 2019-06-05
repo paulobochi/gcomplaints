@@ -1,0 +1,45 @@
+{
+  "resource": "Complaints",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/complaints",
+  "description": "List complaints sorted by name asc",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "sort",
+      "description": "Sort complaints by name asc or desc"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/complaints?sort=name+asc",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "sort": "name asc"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"complaints\": [\n    {\n      \"id\": \"5cf586c153a63446b014640e\",\n      \"title\": \"Officia sunt ex nesciunt.\",\n      \"description\": \"Exercitationem est ut. Beatae qui facilis. Dolor veritatis vitae.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b0146411\",\n        \"name\": \"Rosarioburgh\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b014640d\",\n        \"name\": \"Douglas-Leffler\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146413\",\n      \"title\": \"Architecto dolorem quod consequatur.\",\n      \"description\": \"Voluptates sunt et. Voluptatem sit laborum. Rerum ad voluptatem.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b0146416\",\n        \"name\": \"East Christy\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b0146412\",\n        \"name\": \"Paucek, Bauch and Heller\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146418\",\n      \"title\": \"Aut distinctio omnis corrupti.\",\n      \"description\": \"Repellendus neque et. Assumenda ea aut. Aut nihil et.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b014641b\",\n        \"name\": \"Hansenton\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b0146417\",\n        \"name\": \"Collins, Lind and Rutherford\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b014641d\",\n      \"title\": \"Ea sed perspiciatis minima.\",\n      \"description\": \"Sint unde pariatur. Saepe officia culpa. Enim reiciendis omnis.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b0146420\",\n        \"name\": \"Celenamouth\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b014641c\",\n        \"name\": \"Walter Inc\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146422\",\n      \"title\": \"Possimus et quo rerum.\",\n      \"description\": \"Quia id illum. Ullam nesciunt aut. Maxime qui pariatur.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b0146425\",\n        \"name\": \"West Gino\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b0146421\",\n        \"name\": \"Moore-Murazik\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146427\",\n      \"title\": \"Iusto sit blanditiis autem.\",\n      \"description\": \"In ut repudiandae. Doloremque tempora quo. Modi quisquam error.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b014642a\",\n        \"name\": \"West Lanny\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b0146426\",\n        \"name\": \"Kerluke, Strosin and Doyle\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b014642c\",\n      \"title\": \"Repellat eligendi omnis commodi.\",\n      \"description\": \"Totam quae illo. Rem voluptas veritatis. Ad eum sint.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b014642f\",\n        \"name\": \"New Nadineborough\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b014642b\",\n        \"name\": \"Hahn Inc\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146431\",\n      \"title\": \"Neque voluptatem cum non.\",\n      \"description\": \"Illum sapiente doloribus. Ea sed libero. Facere dolor at.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b0146434\",\n        \"name\": \"North Don\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b0146430\",\n        \"name\": \"Gottlieb-Keeling\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146436\",\n      \"title\": \"Provident hic iste fugiat.\",\n      \"description\": \"Enim consequatur excepturi. Beatae illum assumenda. Deserunt est dolores.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b0146439\",\n        \"name\": \"Ignaciohaven\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b0146435\",\n        \"name\": \"Hayes, Metz and Senger\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b014643b\",\n      \"title\": \"Expedita autem at quam.\",\n      \"description\": \"Perferendis dolores aut. Qui saepe architecto. Soluta maxime voluptas.\",\n      \"city\": {\n        \"id\": \"5cf586c153a63446b014643e\",\n        \"name\": \"Ziemetown\"\n      },\n      \"company\": {\n        \"id\": \"5cf586c153a63446b014643a\",\n        \"name\": \"Bogan, Pouros and Bruen\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"ad2bbecff9cd535c8932611fb1128f4b\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "e3c289c3-bf62-43a6-bd4d-e77dc788fb51",
+        "X-Runtime": "0.029138",
+        "Content-Length": "2978"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/complaints?sort=name+asc\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}
