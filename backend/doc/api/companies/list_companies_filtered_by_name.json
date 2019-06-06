@@ -7,7 +7,7 @@
   "explanation": null,
   "parameters": [
     {
-      "name": "name",
+      "name": "q",
       "description": "Filter company by name"
     }
   ],
@@ -17,29 +17,30 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/companies?name=reclame",
+      "request_path": "/companies?q=reclame",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "name": "reclame"
+        "q": "reclame"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf586c053a63446b0146267\",\n      \"name\": \"Reclame Aqui\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd2c\",\n      \"name\": \"Reclame Aqui\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"550353306902acfb2fae5d018a3f5dca\"",
+        "ETag": "W/\"6c2fb63cdd01b2335d8f070eb4cb8108\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "a3237360-4d24-4f6f-853a-d9264919558d",
-        "X-Runtime": "0.008183",
-        "Content-Length": "178"
+        "X-Request-Id": "55026c8d-9f8d-4fa3-b111-844b4759791f",
+        "X-Runtime": "0.006692",
+        "Vary": "Origin",
+        "Content-Length": "176"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/companies?name=reclame\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/companies?q=reclame\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

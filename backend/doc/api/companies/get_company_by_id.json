@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/companies/5cf586c053a63446b0146276",
+      "request_path": "/companies/5cf97e4b53a6341c446cdd3b",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -25,17 +25,18 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5cf586c053a63446b0146276\",\n  \"name\": \"Hilll and Sons\"\n}",
+      "response_body": "{\n  \"id\": \"5cf97e4b53a6341c446cdd3b\",\n  \"name\": \"Anderson-Feil\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"92839078aec8942988b80c15342f842b\"",
+        "ETag": "W/\"fa4fe15889f33e4936bf30f62595498d\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "8496b85b-6838-43fa-9db8-a06bf0f80a7f",
-        "X-Runtime": "0.002215",
-        "Content-Length": "57"
+        "X-Request-Id": "6a75eb0f-1643-4cd1-819c-60d38439dd74",
+        "X-Runtime": "0.002403",
+        "Vary": "Origin",
+        "Content-Length": "56"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/companies/5cf586c053a63446b0146276\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/companies/5cf97e4b53a6341c446cdd3b\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

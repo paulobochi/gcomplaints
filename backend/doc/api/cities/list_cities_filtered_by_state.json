@@ -7,7 +7,7 @@
   "explanation": null,
   "parameters": [
     {
-      "name": "name",
+      "name": "q",
       "description": "Filter city by name"
     },
     {
@@ -21,29 +21,30 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/cities?state_id=5cf586bf53a63446b014622b",
+      "request_path": "/cities?state_id=5cf97e4b53a6341c446cdcf0",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "state_id": "5cf586bf53a63446b014622b"
+        "state_id": "5cf97e4b53a6341c446cdcf0"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf586bf53a63446b014622e\",\n      \"name\": \"Foz do Iguaçu\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b014622b\",\n        \"name\": \"Paraná\"\n      }\n    },\n    {\n      \"id\": \"5cf586bf53a63446b014622f\",\n      \"name\": \"Cascavel\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b014622b\",\n        \"name\": \"Paraná\"\n      }\n    },\n    {\n      \"id\": \"5cf586bf53a63446b0146230\",\n      \"name\": \"Curitiba\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b014622b\",\n        \"name\": \"Paraná\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 3,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e4b53a6341c446cdcf3\",\n      \"name\": \"Foz do Iguaçu\",\n      \"state\": {\n        \"id\": \"5cf97e4b53a6341c446cdcf0\",\n        \"name\": \"Paraná\"\n      }\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdcf4\",\n      \"name\": \"Cascavel\",\n      \"state\": {\n        \"id\": \"5cf97e4b53a6341c446cdcf0\",\n        \"name\": \"Paraná\"\n      }\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdcf5\",\n      \"name\": \"Curitiba\",\n      \"state\": {\n        \"id\": \"5cf97e4b53a6341c446cdcf0\",\n        \"name\": \"Paraná\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 3,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"ffb2f8cf817f238e452dac7e91a87ace\"",
+        "ETag": "W/\"7c33f61d85157b034590d371c5f11db3\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "3df984b0-7c61-4d58-bcc1-e018b730826e",
-        "X-Runtime": "0.011775",
-        "Content-Length": "458"
+        "X-Request-Id": "b39e811e-768a-4cf4-928f-7c2e3361cf85",
+        "X-Runtime": "0.010791",
+        "Vary": "Origin",
+        "Content-Length": "459"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/cities?state_id=5cf586bf53a63446b014622b\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/cities?state_id=5cf97e4b53a6341c446cdcf0\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

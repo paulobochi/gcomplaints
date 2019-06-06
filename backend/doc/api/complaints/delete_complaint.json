@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/complaints/5cf586c153a63446b014645e",
+      "request_path": "/complaints/5cf97e5053a6341c446cdf2d",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -29,11 +29,12 @@
       "response_body": null,
       "response_headers": {
         "Cache-Control": "no-cache",
-        "X-Request-Id": "ab8d76a7-c56f-4368-88fa-b346b74a6e7e",
-        "X-Runtime": "0.002683"
+        "X-Request-Id": "c7dad38a-75cc-4ab5-a03c-12904b72a395",
+        "X-Runtime": "0.002933",
+        "Vary": "Origin"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/complaints/5cf586c153a63446b014645e\" -d '' -X DELETE \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/complaints/5cf97e5053a6341c446cdf2d\" -d '' -X DELETE \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

@@ -34,14 +34,15 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf586bf53a63446b0146205\",\n      \"name\": \"North Abraham\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b0146204\",\n        \"name\": \"Hawaii\"\n      }\n    },\n    {\n      \"id\": \"5cf586bf53a63446b0146208\",\n      \"name\": \"Shellatown\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b0146207\",\n        \"name\": \"New Jersey\"\n      }\n    },\n    {\n      \"id\": \"5cf586bf53a63446b014620b\",\n      \"name\": \"Kennymouth\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b014620a\",\n        \"name\": \"Illinois\"\n      }\n    },\n    {\n      \"id\": \"5cf586bf53a63446b014620e\",\n      \"name\": \"Rolfsonfurt\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b014620d\",\n        \"name\": \"Arizona\"\n      }\n    },\n    {\n      \"id\": \"5cf586bf53a63446b0146211\",\n      \"name\": \"Lake Celinetown\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b0146210\",\n        \"name\": \"North Dakota\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e4a53a6341c446cdcca\",\n      \"name\": \"Stefanburgh\",\n      \"state\": {\n        \"id\": \"5cf97e4a53a6341c446cdcc9\",\n        \"name\": \"California\"\n      }\n    },\n    {\n      \"id\": \"5cf97e4a53a6341c446cdccd\",\n      \"name\": \"Collinsfurt\",\n      \"state\": {\n        \"id\": \"5cf97e4a53a6341c446cdccc\",\n        \"name\": \"New York\"\n      }\n    },\n    {\n      \"id\": \"5cf97e4a53a6341c446cdcd0\",\n      \"name\": \"Lashandaview\",\n      \"state\": {\n        \"id\": \"5cf97e4a53a6341c446cdccf\",\n        \"name\": \"New Hampshire\"\n      }\n    },\n    {\n      \"id\": \"5cf97e4a53a6341c446cdcd3\",\n      \"name\": \"Torphychester\",\n      \"state\": {\n        \"id\": \"5cf97e4a53a6341c446cdcd2\",\n        \"name\": \"Montana\"\n      }\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdcd6\",\n      \"name\": \"Lake Tobyville\",\n      \"state\": {\n        \"id\": \"5cf97e4b53a6341c446cdcd5\",\n        \"name\": \"Kansas\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"eb0355b15be0d7d86bc07f8209bd8bb2\"",
+        "ETag": "W/\"dfd8d079511d6839e1cb7fde334fd068\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "d69ff934-3c82-4d2d-a24b-7d0b164dacac",
-        "X-Runtime": "0.011168",
-        "Content-Length": "698"
+        "X-Request-Id": "9034439b-c115-4363-9d75-25a871d34e81",
+        "X-Runtime": "0.009451",
+        "Vary": "Origin",
+        "Content-Length": "702"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"http://localhost:3000/cities?page=1&size=5\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

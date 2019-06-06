@@ -25,14 +25,15 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf586c053a63446b0146251\",\n      \"name\": \"Walter-Klocko\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146252\",\n      \"name\": \"Turcotte-MacGyver\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146253\",\n      \"name\": \"Kuvalis and Sons\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146254\",\n      \"name\": \"Volkman Group\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146255\",\n      \"name\": \"Koch, Hauck and Rippin\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146256\",\n      \"name\": \"Gleichner LLC\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146257\",\n      \"name\": \"Auer Group\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146258\",\n      \"name\": \"Ebert LLC\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146259\",\n      \"name\": \"Morar LLC\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b014625a\",\n      \"name\": \"Gibson, Corwin and Rempel\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd16\",\n      \"name\": \"Becker Group\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd17\",\n      \"name\": \"Ebert-MacGyver\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd18\",\n      \"name\": \"Hoppe-Donnelly\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd19\",\n      \"name\": \"Olson-Hackett\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd1a\",\n      \"name\": \"Feil, West and Hettinger\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd1b\",\n      \"name\": \"Boehm-Veum\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd1c\",\n      \"name\": \"Abshire-Mann\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd1d\",\n      \"name\": \"Fadel, Senger and Terry\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd1e\",\n      \"name\": \"Kunde and Sons\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd1f\",\n      \"name\": \"Kemmer-Mohr\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"51fc460dd5890f54188340aabb1e47cd\"",
+        "ETag": "W/\"7b3c3d20a41642fc1dcc009a31c578fb\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "afdcf4b0-736b-4628-9a65-850c00b26b55",
-        "X-Runtime": "0.006770",
-        "Content-Length": "710"
+        "X-Request-Id": "ba68cb93-a0f6-4b17-bc6a-4406d6230746",
+        "X-Runtime": "0.004768",
+        "Vary": "Origin",
+        "Content-Length": "708"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"http://localhost:3000/companies\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

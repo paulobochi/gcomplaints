@@ -18,7 +18,7 @@
     {
       "request_method": "POST",
       "request_path": "/companies",
-      "request_body": "_id=5cf586c053a63446b0146272&name=Hauck%2C+Friesen+and+Grimes",
+      "request_body": "_id=5cf97e4b53a6341c446cdd37&name=Stoltenberg+Group",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -29,17 +29,18 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5cf586c053a63446b0146273\",\n  \"name\": \"Hauck, Friesen and Grimes\"\n}",
+      "response_body": "{\n  \"id\": \"5cf97e4b53a6341c446cdd38\",\n  \"name\": \"Stoltenberg Group\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"6e2b280ea50f8c99b52ae302bf63bec0\"",
+        "ETag": "W/\"5346aea0dc60771726817705f53ccf6f\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "b3e01ed2-08b0-4417-abf1-161d00209fa6",
-        "X-Runtime": "0.005947",
-        "Content-Length": "68"
+        "X-Request-Id": "ff2c9e1a-b445-46ad-a400-b85e9db6c1cf",
+        "X-Runtime": "0.005419",
+        "Vary": "Origin",
+        "Content-Length": "60"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:3000/companies\" -d '_id=5cf586c053a63446b0146272&name=Hauck%2C+Friesen+and+Grimes' -X POST \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/companies\" -d '_id=5cf97e4b53a6341c446cdd37&name=Stoltenberg+Group' -X POST \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

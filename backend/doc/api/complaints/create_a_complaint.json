@@ -1,0 +1,54 @@
+{
+  "resource": "Complaints",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/complaints",
+  "description": "Create a complaint",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "title",
+      "description": "Complaint title"
+    },
+    {
+      "name": "description",
+      "description": "Complaint description"
+    },
+    {
+      "name": "company_id",
+      "description": "Company id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/complaints",
+      "request_body": "_id=5cf97e4c53a6341c446cdf05&title=Adipisci+autem+in+tempora.&description=Quia+doloribus+voluptate.+Saepe+molestias+optio.+Atque+ea+quas.&coordinates[]=-54.559549200000006&coordinates[]=-25.5266104&company_id=5cf97e4c53a6341c446cdf04",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"5cf97e4d53a6341c446cdf09\",\n  \"title\": \"Adipisci autem in tempora.\",\n  \"description\": \"Quia doloribus voluptate. Saepe molestias optio. Atque ea quas.\",\n  \"state\": {\n    \"_id\": \"5cf97e4d53a6341c446cdf07\",\n    \"country_id\": \"5cf97e4d53a6341c446cdf06\",\n    \"created_at\": \"2019-06-06T20:57:49.452Z\",\n    \"name\": \"Paraná\",\n    \"updated_at\": \"2019-06-06T20:57:49.452Z\"\n  },\n  \"country\": {\n    \"_id\": \"5cf97e4d53a6341c446cdf06\",\n    \"created_at\": \"2019-06-06T20:57:49.440Z\",\n    \"name\": \"Brasil\",\n    \"updated_at\": \"2019-06-06T20:57:49.440Z\"\n  },\n  \"created_at\": \"2019-06-06T20:57:49.472Z\",\n  \"city\": {\n    \"id\": \"5cf97e4d53a6341c446cdf08\",\n    \"name\": \"Foz do Iguaçu\"\n  },\n  \"company\": {\n    \"id\": \"5cf97e4c53a6341c446cdf04\",\n    \"name\": \"Lang-Dickinson\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"eff486a3b4b6dbab220adb187ab573a6\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "d5d24242-777b-4677-9846-9d06378b8b46",
+        "X-Runtime": "1.001388",
+        "Vary": "Origin",
+        "Content-Length": "644"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/complaints\" -d '_id=5cf97e4c53a6341c446cdf05&title=Adipisci+autem+in+tempora.&description=Quia+doloribus+voluptate.+Saepe+molestias+optio.+Atque+ea+quas.&coordinates[]=-54.559549200000006&coordinates[]=-25.5266104&company_id=5cf97e4c53a6341c446cdf04' -X POST \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

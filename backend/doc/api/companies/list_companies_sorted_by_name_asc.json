@@ -29,14 +29,15 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"companies\": [\n    {\n      \"id\": \"5cf586c053a63446b014626e\",\n      \"name\": \"Cronin Inc\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146270\",\n      \"name\": \"Feest-Orn\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b014626f\",\n      \"name\": \"Gutmann, O'Reilly and McGlynn\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146268\",\n      \"name\": \"Harvey and Sons\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b014626b\",\n      \"name\": \"Jerde, Ortiz and Lindgren\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b014626d\",\n      \"name\": \"Kovacek, Morar and Fritsch\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b014626a\",\n      \"name\": \"Pagac-Hickle\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b014626c\",\n      \"name\": \"Schimmel-Hilll\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146271\",\n      \"name\": \"Waelchi, Vandervort and Pfannerstill\"\n    },\n    {\n      \"id\": \"5cf586c053a63446b0146269\",\n      \"name\": \"Zulauf, Block and Gutkowski\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd30\",\n      \"name\": \"Effertz and Sons\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd32\",\n      \"name\": \"Fadel, Stokes and McGlynn\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd36\",\n      \"name\": \"Feest Group\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd35\",\n      \"name\": \"Hodkiewicz-Harber\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd2e\",\n      \"name\": \"Kilback Inc\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd31\",\n      \"name\": \"Kuhn-Cruickshank\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd34\",\n      \"name\": \"Medhurst, Jaskolski and Schamberger\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd33\",\n      \"name\": \"Russel-Becker\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd2d\",\n      \"name\": \"Schamberger, Parker and Hermiston\"\n    },\n    {\n      \"id\": \"5cf97e4b53a6341c446cdd2f\",\n      \"name\": \"Welch, Dooley and Padberg\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"ffac300e9489cd34aee1cc14374ca9e3\"",
+        "ETag": "W/\"fa5b4c3bcce42f94199f58e30a20177c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "4fc5a99e-3f2d-413b-840c-125e14a7e926",
-        "X-Runtime": "0.006009",
-        "Content-Length": "766"
+        "X-Request-Id": "8efea866-15f5-4c90-8336-4af8877e85c4",
+        "X-Runtime": "0.003826",
+        "Vary": "Origin",
+        "Content-Length": "763"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"http://localhost:3000/companies?sort=name+asc\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

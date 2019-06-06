@@ -108,6 +108,13 @@
       "explanation": null,
       "examples": [
         {
+          "description": "Create a complaint",
+          "link": "complaints/create_a_complaint.json",
+          "groups": "all",
+          "route": "/complaints",
+          "method": "post"
+        },
+        {
           "description": "Delete complaint",
           "link": "complaints/delete_complaint.json",
           "groups": "all",

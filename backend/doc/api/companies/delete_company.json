@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/companies/5cf586c053a63446b0146278",
+      "request_path": "/companies/5cf97e4b53a6341c446cdd3d",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -29,11 +29,12 @@
       "response_body": null,
       "response_headers": {
         "Cache-Control": "no-cache",
-        "X-Request-Id": "c4f558fb-ef04-4f67-b55a-87a20ddbc577",
-        "X-Runtime": "0.004290"
+        "X-Request-Id": "bd47bb34-9f5f-41b2-9bb9-ef082389cc12",
+        "X-Runtime": "0.004264",
+        "Vary": "Origin"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/companies/5cf586c053a63446b0146278\" -d '' -X DELETE \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/companies/5cf97e4b53a6341c446cdd3d\" -d '' -X DELETE \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

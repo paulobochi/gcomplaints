@@ -7,7 +7,7 @@
   "explanation": null,
   "parameters": [
     {
-      "name": "name",
+      "name": "q",
       "description": "Filter city by name"
     },
     {
@@ -21,29 +21,30 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/cities?name=foz",
+      "request_path": "/cities?q=foz",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "name": "foz"
+        "q": "foz"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"cities\": [\n    {\n      \"id\": \"5cf586bf53a63446b0146225\",\n      \"name\": \"Foz do Iguaçu\",\n      \"state\": {\n        \"id\": \"5cf586bf53a63446b0146222\",\n        \"name\": \"Paraná\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e4b53a6341c446cdcea\",\n      \"name\": \"Foz do Iguaçu\",\n      \"state\": {\n        \"id\": \"5cf97e4b53a6341c446cdce7\",\n        \"name\": \"Paraná\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b6d12bdb6b1618981217f29d1dc26921\"",
+        "ETag": "W/\"1c8c5078881938fe229224f488196284\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "55891303-7169-4757-b14b-006591399431",
-        "X-Runtime": "0.008315",
-        "Content-Length": "236"
+        "X-Request-Id": "00e3d988-912b-433a-a251-81c8a55314e5",
+        "X-Runtime": "0.007361",
+        "Vary": "Origin",
+        "Content-Length": "237"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/cities?name=foz\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/cities?q=foz\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

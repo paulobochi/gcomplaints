@@ -7,7 +7,7 @@
   "explanation": null,
   "parameters": [
     {
-      "name": "name",
+      "name": "q",
       "description": "Filter state by name"
     },
     {
@@ -21,29 +21,30 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/states?name=paran%C3%A1",
+      "request_path": "/states?q=paran%C3%A1",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "name": "paraná"
+        "q": "paraná"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"states\": [\n    {\n      \"id\": \"5cf586c153a63446b01464ad\",\n      \"name\": \"Paraná\",\n      \"country\": {\n        \"id\": \"5cf586c153a63446b01464ab\",\n        \"name\": \"Brasil\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e5053a6341c446cdf7c\",\n      \"name\": \"Paraná\",\n      \"country\": {\n        \"id\": \"5cf97e5053a6341c446cdf7a\",\n        \"name\": \"Brasil\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"6aab4c8bbf927a0ae6c44bbd15b392ea\"",
+        "ETag": "W/\"2046edeca422cb9629f4a32d7e2bde8a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "a30f20c7-6924-47c1-8b30-d47d804a431e",
-        "X-Runtime": "0.008597",
-        "Content-Length": "230"
+        "X-Request-Id": "6785368d-1d16-4ccd-9258-f2633b8f4328",
+        "X-Runtime": "0.007367",
+        "Vary": "Origin",
+        "Content-Length": "231"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/states?name=paran%C3%A1\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/states?q=paran%C3%A1\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

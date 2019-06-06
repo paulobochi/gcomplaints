@@ -17,8 +17,8 @@
   "requests": [
     {
       "request_method": "PUT",
-      "request_path": "/companies/5cf586c053a63446b0146277",
-      "request_body": "_id=5cf586c053a63446b0146277&name=New+Company+Name&updated_at=2019-06-03+20%3A44%3A48+UTC&created_at=2019-06-03+20%3A44%3A48+UTC",
+      "request_path": "/companies/5cf97e4b53a6341c446cdd3c",
+      "request_body": "_id=5cf97e4b53a6341c446cdd3c&name=New+Company+Name&updated_at=2019-06-06+20%3A57%3A47+UTC&created_at=2019-06-06+20%3A57%3A47+UTC",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -29,17 +29,18 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5cf586c053a63446b0146277\",\n  \"name\": \"New Company Name\"\n}",
+      "response_body": "{\n  \"id\": \"5cf97e4b53a6341c446cdd3c\",\n  \"name\": \"New Company Name\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"07aed3cc7b6b4bc8aac05a141efd1584\"",
+        "ETag": "W/\"55464dc0b1a716ab739e833c15534ae8\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "96e6e37a-beac-4ac0-820f-e47b980a90fe",
-        "X-Runtime": "0.005246",
+        "X-Request-Id": "8c4edce6-bade-42a1-a037-55a24a2cc280",
+        "X-Runtime": "0.005441",
+        "Vary": "Origin",
         "Content-Length": "59"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:3000/companies/5cf586c053a63446b0146277\" -d '_id=5cf586c053a63446b0146277&name=New+Company+Name&updated_at=2019-06-03+20%3A44%3A48+UTC&created_at=2019-06-03+20%3A44%3A48+UTC' -X PUT \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/companies/5cf97e4b53a6341c446cdd3c\" -d '_id=5cf97e4b53a6341c446cdd3c&name=New+Company+Name&updated_at=2019-06-06+20%3A57%3A47+UTC&created_at=2019-06-06+20%3A57%3A47+UTC' -X PUT \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

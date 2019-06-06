@@ -7,7 +7,7 @@
   "explanation": null,
   "parameters": [
     {
-      "name": "name",
+      "name": "q",
       "description": "Filter country by name"
     }
   ],
@@ -17,29 +17,30 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/countries?name=brasil",
+      "request_path": "/countries?q=brasil",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "name": "brasil"
+        "q": "brasil"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"countries\": [\n    {\n      \"id\": \"5cf586c153a63446b0146476\",\n      \"name\": \"Brasil\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e5053a6341c446cdf45\",\n      \"name\": \"Brasil\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 1,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"a999bc2ce5755f530b7a8b47b437f172\"",
+        "ETag": "W/\"084229818e6f94469e006db4fd752c90\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "daa33f68-5389-4949-b25a-8a0223d5a0c5",
-        "X-Runtime": "0.007668",
-        "Content-Length": "172"
+        "X-Request-Id": "b369eca6-1fcd-410d-93ad-a668118467c8",
+        "X-Runtime": "0.006198",
+        "Vary": "Origin",
+        "Content-Length": "170"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/countries?name=brasil\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/countries?q=brasil\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

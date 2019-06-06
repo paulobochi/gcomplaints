@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/complaints/5cf586c153a63446b0146453",
+      "request_path": "/complaints/5cf97e5053a6341c446cdf22",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -25,17 +25,18 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5cf586c153a63446b0146453\",\n  \"title\": \"Et hic fuga ullam.\",\n  \"description\": \"Dolores ut omnis. Magni quaerat voluptas. Doloribus recusandae nihil.\",\n  \"city\": {\n    \"id\": \"5cf586c153a63446b0146456\",\n    \"name\": \"Jakubowskichester\"\n  },\n  \"company\": {\n    \"id\": \"5cf586c153a63446b0146452\",\n    \"name\": \"Okuneva, Predovic and Jacobs\"\n  }\n}",
+      "response_body": "{\n  \"id\": \"5cf97e5053a6341c446cdf22\",\n  \"title\": \"Ullam aperiam nihil consectetur.\",\n  \"description\": \"Porro eius ea. Ratione ea odio. Incidunt velit quia.\",\n  \"state\": {\n    \"_id\": \"5cf97e5053a6341c446cdf24\",\n    \"country_id\": \"5cf97e5053a6341c446cdf23\",\n    \"created_at\": \"2019-06-06T20:57:52.455Z\",\n    \"name\": \"South Dakota\",\n    \"updated_at\": \"2019-06-06T20:57:52.455Z\"\n  },\n  \"country\": {\n    \"_id\": \"5cf97e5053a6341c446cdf23\",\n    \"created_at\": \"2019-06-06T20:57:52.453Z\",\n    \"name\": \"Bangladesh\",\n    \"updated_at\": \"2019-06-06T20:57:52.453Z\"\n  },\n  \"created_at\": \"2019-06-06T20:57:52.459Z\",\n  \"city\": {\n    \"id\": \"5cf97e5053a6341c446cdf25\",\n    \"name\": \"Port Jenehaven\"\n  },\n  \"company\": {\n    \"id\": \"5cf97e5053a6341c446cdf21\",\n    \"name\": \"Smith LLC\"\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"cc8c3ef19f66299ce7dd52d4503dd1fa\"",
+        "ETag": "W/\"bc8b9fff45eac63d1b76fb83c3358023\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "07f74afd-6409-4773-888d-cac665c31843",
-        "X-Runtime": "0.004329",
-        "Content-Length": "298"
+        "X-Request-Id": "8d29bb3f-d6cd-4849-aa99-d5a993f4cfac",
+        "X-Runtime": "0.010009",
+        "Vary": "Origin",
+        "Content-Length": "643"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/complaints/5cf586c153a63446b0146453\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/complaints/5cf97e5053a6341c446cdf22\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

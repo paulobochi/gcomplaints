@@ -29,14 +29,15 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"countries\": [\n    {\n      \"id\": \"5cf586c153a63446b014647e\",\n      \"name\": \"Albania\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b014647f\",\n      \"name\": \"Bahrain\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b014647d\",\n      \"name\": \"Brazil\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b014647c\",\n      \"name\": \"Dominican Republic\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b014647b\",\n      \"name\": \"Equatorial Guinea\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146481\",\n      \"name\": \"Japan\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146479\",\n      \"name\": \"Nepal\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146482\",\n      \"name\": \"Sudan\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b014647a\",\n      \"name\": \"Taiwan\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146480\",\n      \"name\": \"United States Minor Outlying Islands\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e5053a6341c446cdf48\",\n      \"name\": \"Belgium\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf4f\",\n      \"name\": \"Brunei Darussalam\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf4c\",\n      \"name\": \"Egypt\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf4d\",\n      \"name\": \"Fiji\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf50\",\n      \"name\": \"Heard Island and McDonald Islands\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf51\",\n      \"name\": \"Iraq\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf4b\",\n      \"name\": \"Jordan\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf4a\",\n      \"name\": \"Northern Mariana Islands\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf4e\",\n      \"name\": \"Russian Federation\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf49\",\n      \"name\": \"United States of America\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"prev_page\": null,\n    \"total_pages\": 1,\n    \"total_count\": 10,\n    \"page_size\": 25\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"107f69043ca5c214402987732b750ded\"",
+        "ETag": "W/\"1b5008789176c0fbf015d5e27ba5e02c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "8e8b6ff0-1ce3-48e8-b6e6-6662f991326c",
-        "X-Runtime": "0.005591",
-        "Content-Length": "675"
+        "X-Request-Id": "5df154f7-12fe-4a94-9cd3-c5016dc9689c",
+        "X-Runtime": "0.003225",
+        "Vary": "Origin",
+        "Content-Length": "703"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"http://localhost:3000/countries?sort=name+asc\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

@@ -34,14 +34,15 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"countries\": [\n    {\n      \"id\": \"5cf586c153a63446b014646c\",\n      \"name\": \"Guatemala\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b014646d\",\n      \"name\": \"Equatorial Guinea\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b014646e\",\n      \"name\": \"Suriname\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b014646f\",\n      \"name\": \"Djibouti\"\n    },\n    {\n      \"id\": \"5cf586c153a63446b0146470\",\n      \"name\": \"Liberia\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e5053a6341c446cdf3b\",\n      \"name\": \"Saint Pierre and Miquelon\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf3c\",\n      \"name\": \"South Georgia and the South Sandwich Islands\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf3d\",\n      \"name\": \"Belarus\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf3e\",\n      \"name\": \"Zimbabwe\"\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf3f\",\n      \"name\": \"Palau\"\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"04ab94dcba0aee4efafd47608a166452\"",
+        "ETag": "W/\"d888803915fae5912fb7e8efed77d3c9\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "68b92b6e-f258-458f-9b90-c6ff875c8902",
-        "X-Runtime": "0.004257",
-        "Content-Length": "388"
+        "X-Request-Id": "139098c7-8aa3-4b47-be47-25062f57f1ee",
+        "X-Runtime": "0.003669",
+        "Vary": "Origin",
+        "Content-Length": "426"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"http://localhost:3000/countries?page=1&size=5\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

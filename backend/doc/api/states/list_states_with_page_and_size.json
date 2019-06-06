@@ -34,14 +34,15 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"states\": [\n    {\n      \"id\": \"5cf586c153a63446b0146498\",\n      \"name\": \"Colorado\",\n      \"country\": {\n        \"id\": \"5cf586c153a63446b0146497\",\n        \"name\": \"French Guiana\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b014649a\",\n      \"name\": \"Michigan\",\n      \"country\": {\n        \"id\": \"5cf586c153a63446b0146499\",\n        \"name\": \"Myanmar\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b014649c\",\n      \"name\": \"Iowa\",\n      \"country\": {\n        \"id\": \"5cf586c153a63446b014649b\",\n        \"name\": \"Lesotho\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b014649e\",\n      \"name\": \"Ohio\",\n      \"country\": {\n        \"id\": \"5cf586c153a63446b014649d\",\n        \"name\": \"San Marino\"\n      }\n    },\n    {\n      \"id\": \"5cf586c153a63446b01464a0\",\n      \"name\": \"New Jersey\",\n      \"country\": {\n        \"id\": \"5cf586c153a63446b014649f\",\n        \"name\": \"Moldova\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
+      "response_body": "{\n  \"records\": [\n    {\n      \"id\": \"5cf97e5053a6341c446cdf67\",\n      \"name\": \"Montana\",\n      \"country\": {\n        \"id\": \"5cf97e5053a6341c446cdf66\",\n        \"name\": \"Marshall Islands\"\n      }\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf69\",\n      \"name\": \"Michigan\",\n      \"country\": {\n        \"id\": \"5cf97e5053a6341c446cdf68\",\n        \"name\": \"Egypt\"\n      }\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf6b\",\n      \"name\": \"California\",\n      \"country\": {\n        \"id\": \"5cf97e5053a6341c446cdf6a\",\n        \"name\": \"Kenya\"\n      }\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf6d\",\n      \"name\": \"Oklahoma\",\n      \"country\": {\n        \"id\": \"5cf97e5053a6341c446cdf6c\",\n        \"name\": \"Turkmenistan\"\n      }\n    },\n    {\n      \"id\": \"5cf97e5053a6341c446cdf6f\",\n      \"name\": \"North Carolina\",\n      \"country\": {\n        \"id\": \"5cf97e5053a6341c446cdf6e\",\n        \"name\": \"Belarus\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"prev_page\": null,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"page_size\": 5\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b2d7e46a2bac4b57c2f72abbd1501a17\"",
+        "ETag": "W/\"e4ca94a35be8d1ecf2381e54a29eb68a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "e5bff9c9-a613-48eb-bf10-2f59a0fb9309",
-        "X-Runtime": "0.010521",
-        "Content-Length": "684"
+        "X-Request-Id": "4bfd88cc-4fb9-41fe-94f7-a7607c11f5a9",
+        "X-Runtime": "0.008071",
+        "Vary": "Origin",
+        "Content-Length": "699"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"http://localhost:3000/states?page=1&size=5\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

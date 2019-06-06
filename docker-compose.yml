@@ -1,0 +1,26 @@
+version: "3"
+services:
+  db:
+    image: mongo:4.0.10-xenial
+    volumes:
+      - ~/mongo:/data/db
+    ports:
+      - "27017:27017"
+  api:
+    build: ./backend
+    image: gcomplaints/backend
+    command: ["bundle", "exec", "puma", "-C", "config/puma.rb"]
+    ports:
+      - "4000:3000"
+    environment:
+      - RAILS_ENV=docker
+    depends_on:
+      - db
+  web:
+    build: ./frontend
+    image: gcomplaints/frontend
+    command: ["serve", "-s", "build"]
+    ports:
+      - "3000:5000"
+    depends_on:
+      - api
