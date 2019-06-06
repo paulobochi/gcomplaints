@@ -8461,6 +8461,11 @@ react-app-polyfill@^1.0.1:
     regenerator-runtime "0.13.2"
     whatwg-fetch "3.0.0"
 
+react-browser-hooks@^2.2.3:
+  version "2.2.3"
+  resolved "https://npm.eits.com.br:443/react-browser-hooks/-/react-browser-hooks-2.2.3.tgz#2b31731612b52aaec324048a0eaf651fe9b87d3a"
+  integrity sha512-JeRrc5+MM9OFif5e116uB+aeorYh0nI9TxAobgebArBq0h5poADuLvzSpH7oQ2WQfY6h1M2OOafDEK65GfHDvw==
+
 react-dev-utils@^9.0.1:
   version "9.0.1"
   resolved "https://npm.eits.com.br:443/react-dev-utils/-/react-dev-utils-9.0.1.tgz#5c03d85a0b2537d0c46af7165c24a7dfb274bef2"

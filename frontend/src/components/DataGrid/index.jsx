@@ -1,5 +1,3 @@
-// @flow
-
 import * as React from "react";
 import { withRouter } from "react-router";
 import {
@@ -19,7 +17,6 @@ import {
   PagingPanel
 } from "@devexpress/dx-react-grid-material-ui";
 import { withStyles } from "@material-ui/core/styles";
-import Error from "../Error";
 import Loading from "../Loading";
 
 const styles = {
@@ -55,12 +52,13 @@ class DataGrid extends React.Component {
   }
 
   shouldComponentUpdate(nextProps) {
-    const { resources, filters, isFetched } = this.props;
+    const { resources, filters, isFetched, isFetching } = this.props;
 
     return (
       nextProps.filters !== filters ||
       nextProps.resources !== resources ||
-      nextProps.isFetched !== isFetched
+      nextProps.isFetched !== isFetched ||
+      nextProps.isFetching !== isFetching
     );
   }
 
@@ -189,11 +187,7 @@ class DataGrid extends React.Component {
   }
 
   render() {
-    const { error, isFetching, isFetched } = this.props;
-
-    if (error) {
-      return <Error />;
-    }
+    const { isFetching, isFetched } = this.props;
 
     if (isFetching) {
       return <Loading />;

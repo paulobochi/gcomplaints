@@ -1,5 +1,11 @@
+.App {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .main-wrapper {
-  margin-top: 64px;
+  height: calc(100vh - 114px);
+  overflow: auto;
 }
 
 .main {
