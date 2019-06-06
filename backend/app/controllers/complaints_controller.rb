@@ -52,7 +52,7 @@ class ComplaintsController < ApplicationController
   def query_params
     {
       company_id_eq: params[:company_id],
-      city_id_in: city_ids
+      city_id_in: (city_ids&.+ [1])
     }
   end
 

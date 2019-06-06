@@ -17,6 +17,7 @@ The recommended way to build the environment is with docker
 ```shell
 docker-compose build
 docker-compose up -d
+docker-compose exec api rails db:seed   //creates sample data
 ```
 
 ### Without Docker
@@ -34,6 +35,7 @@ To setup and get the backend running locally run:
 ```shell
 cd backend
 bundle install
+rails db:seed             //creates sample data
 rails s -p 4000
 ```
 
