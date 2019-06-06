@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useGeolocation } from "react-browser-hooks";
 import { Form, Field } from "react-final-form";
+import { Link as RouterLink } from "react-router-dom";
 import {
   Paper,
   CardContent,
   FormControl,
   Button,
-  withStyles
+  withStyles,
+  Link
 } from "@material-ui/core";
 
 import TextInput from "../../../components/inputs/Text";
@@ -75,6 +77,9 @@ export default withStyles(styles)(({ match, history, classes }) => {
           initialValues={decorateIntialValues(complaint)}
           render={({ handleSubmit, submitting, values, errors, touched }) => (
             <form noValidate autoComplete="off" onSubmit={handleSubmit}>
+              <Link component={RouterLink} to="/companies/new">
+                Did not find the company?
+              </Link>
               <FormControl
                 margin="normal"
                 fullWidth

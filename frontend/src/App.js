@@ -12,6 +12,7 @@ import Loading from "./components/Loading";
 import Breadcrumbs from "./components/Breadcrumbs";
 
 const Complaints = lazy(() => import("./pages/complaints"));
+const Companies = lazy(() => import("./pages/companies"));
 
 const history = createHashHistory();
 
@@ -34,6 +35,7 @@ function App() {
               <Suspense fallback={<Loading fullScreen />}>
                 <Switch>
                   <Route path="/complaints" component={Complaints} />
+                  <Route path="/companies" component={Companies} />
                   <Redirect to="/complaints" />
                 </Switch>
               </Suspense>
