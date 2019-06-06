@@ -1,24 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from "react";
+import { Router } from "react-router";
+import { Switch, Route } from "react-router-dom";
+import { createHashHistory } from "history";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+
+import { configureAPI } from "./api";
+import "./App.css";
+import Loading from "./components/Loading";
+import Breadcrumbs from "./components/Breadcrumbs";
+
+const Complaints = lazy(() => import("./pages/complaints"));
+
+const history = createHashHistory();
+
+configureAPI();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppBar position="fixed">
+        <Toolbar>
+          <Typography variant="h6">GComplaints</Typography>
+        </Toolbar>
+      </AppBar>
+
+      <Router history={history}>
+        <div className="main-wrapper">
+          <Breadcrumbs />
+          <div className="main">
+            <Suspense fallback={<Loading fullScreen />}>
+              <Switch>
+                <Route exact path="/" component={Complaints} />
+              </Switch>
+            </Suspense>
+          </div>
+        </div>
+      </Router>
     </div>
   );
 }
