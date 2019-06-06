@@ -8,14 +8,14 @@ class CountriesController < ApplicationController
       .page(params[:page])
       .per(params[:size])
 
-    render json: @countries, meta: pagination_data(@countries), adapter: :json
+    render json: @countries, meta: pagination_data(@countries), adapter: :json, root: :records
   end
 
   private
 
   def query_params
     {
-      name_cont: params[:name]
+      name_start: params[:q]
     }
   end
 

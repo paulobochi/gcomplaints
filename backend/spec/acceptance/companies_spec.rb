@@ -10,7 +10,7 @@ resource :Companies do
           do_request
 
           expect(status).to eq(200)
-          expect(json["companies"].length).to eq(10)
+          expect(json["records"].length).to eq(10)
         end
       end
 
@@ -22,7 +22,7 @@ resource :Companies do
           do_request(page: 1, size: 5)
 
           expect(status).to eq(200)
-          expect(json["companies"].length).to eq(5)
+          expect(json["records"].length).to eq(5)
           expect(json["meta"]["current_page"]).to eq(1)
           expect(json["meta"]["page_size"]).to eq(5)
         end
@@ -36,13 +36,13 @@ resource :Companies do
         create(:company, name: "Reclame Aqui")
       }
 
-      parameter :name, "Filter company by name"
+      parameter :q, "Filter company by name"
 
       example "List companies filtered by name" do
-        do_request(name: "reclame")
+        do_request(q: "reclame")
 
         expect(status).to eq(200)
-        expect(json["companies"].length).to eq(1)
+        expect(json["records"].length).to eq(1)
       end
     end
 

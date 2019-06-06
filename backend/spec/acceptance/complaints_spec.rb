@@ -10,7 +10,7 @@ resource :Complaints do
           do_request
 
           expect(status).to eq(200)
-          expect(json["complaints"].length).to eq(10)
+          expect(json["records"].length).to eq(10)
         end
       end
 
@@ -22,7 +22,7 @@ resource :Complaints do
           do_request(page: 1, size: 5)
 
           expect(status).to eq(200)
-          expect(json["complaints"].length).to eq(5)
+          expect(json["records"].length).to eq(5)
           expect(json["meta"]["current_page"]).to eq(1)
           expect(json["meta"]["page_size"]).to eq(5)
         end
@@ -153,7 +153,12 @@ resource :Complaints do
       example 'Get complaint by id' do
         do_request(id: complaint.id)
         expect(status).to eq(200)
-        expect(json).to include_json(ComplaintSerializer.new(complaint).attributes.as_json)
+        expect(status).to eq(200)
+        expect(json["title"]).to eq(complaint.title)
+        expect(json["description"]).to eq(complaint.description)
+        expect(json["company"]["id"]).to eq(complaint.company.id.as_json)
+        expect(json["city"]["id"]).to be_present
+        expect(json["id"]).to be_present
       end
     end
 

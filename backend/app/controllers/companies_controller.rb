@@ -9,7 +9,7 @@ class CompaniesController < ApplicationController
       .page(params[:page])
       .per(params[:size])
 
-    render json: @companies, meta: pagination_data(@companies), adapter: :json
+    render json: @companies, meta: pagination_data(@companies), adapter: :json, root: :records
   end
 
   def create
@@ -50,7 +50,7 @@ class CompaniesController < ApplicationController
 
   def query_params
     {
-      name_cont: params[:name]
+      name_start: params[:q]
     }
   end
 end

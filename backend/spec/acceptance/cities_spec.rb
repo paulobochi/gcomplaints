@@ -12,7 +12,7 @@ resource :Cities do
           do_request
 
           expect(status).to eq(200)
-          expect(json["cities"].length).to eq(10)
+          expect(json["records"].length).to eq(10)
         end
       end
 
@@ -24,7 +24,7 @@ resource :Cities do
           do_request(page: 1, size: 5)
 
           expect(status).to eq(200)
-          expect(json["cities"].length).to eq(5)
+          expect(json["records"].length).to eq(5)
           expect(json["meta"]["current_page"]).to eq(1)
           expect(json["meta"]["page_size"]).to eq(5)
         end
@@ -43,21 +43,21 @@ resource :Cities do
         create(:city, name: "Campinas", state: sp)
       }
 
-      parameter :name, "Filter city by name"
+      parameter :q, "Filter city by name"
       parameter :state_id, "Filter city by state"
 
       example "List cities filtered by name" do
-        do_request(name: "foz")
+        do_request(q: "foz")
 
         expect(status).to eq(200)
-        expect(json["cities"].length).to eq(1)
+        expect(json["records"].length).to eq(1)
       end
 
       example "List cities filtered by state" do
         do_request(state_id: pr.id)
 
         expect(status).to eq(200)
-        expect(json["cities"].length).to eq(3)
+        expect(json["records"].length).to eq(3)
       end
     end
 

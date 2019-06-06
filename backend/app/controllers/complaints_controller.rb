@@ -5,11 +5,12 @@ class ComplaintsController < ApplicationController
     @complaints = Complaint
       .ransack(query_params)
       .result
+      .includes(:company, city: [ state: :country ])
       .order(params[:sort])
       .page(params[:page])
       .per(params[:size])
 
-    render json: @complaints, meta: pagination_data(@complaints), adapter: :json
+    render json: @complaints, meta: pagination_data(@complaints), adapter: :json, root: :records
   end
 
   def create

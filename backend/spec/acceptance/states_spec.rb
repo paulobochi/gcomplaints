@@ -12,7 +12,7 @@ resource :States do
           do_request
 
           expect(status).to eq(200)
-          expect(json["states"].length).to eq(10)
+          expect(json["records"].length).to eq(10)
         end
       end
 
@@ -24,7 +24,7 @@ resource :States do
           do_request(page: 1, size: 5)
 
           expect(status).to eq(200)
-          expect(json["states"].length).to eq(5)
+          expect(json["records"].length).to eq(5)
           expect(json["meta"]["current_page"]).to eq(1)
           expect(json["meta"]["page_size"]).to eq(5)
         end
@@ -43,21 +43,21 @@ resource :States do
         create(:state, name: "Florida", country: us)
       }
 
-      parameter :name, "Filter state by name"
+      parameter :q, "Filter state by name"
       parameter :country_id, "Filter state by country"
 
       example "List states filtered by name" do
-        do_request(name: "paraná")
+        do_request(q: "paraná")
 
         expect(status).to eq(200)
-        expect(json["states"].length).to eq(1)
+        expect(json["records"].length).to eq(1)
       end
 
       example "List states filtered by country" do
         do_request(country_id: br.id)
 
         expect(status).to eq(200)
-        expect(json["states"].length).to eq(3)
+        expect(json["records"].length).to eq(3)
       end
     end
 

@@ -8,14 +8,14 @@ class CitiesController < ApplicationController
       .page(params[:page])
       .per(params[:size])
 
-    render json: @cities, meta: pagination_data(@cities), adapter: :json
+    render json: @cities, meta: pagination_data(@cities), adapter: :json, root: :records
   end
 
   private
 
   def query_params
     {
-      name_cont: params[:name],
+      name_start: params[:q],
       state_id_eq: params[:state_id]
     }
   end
