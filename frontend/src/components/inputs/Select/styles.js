@@ -5,8 +5,7 @@ export default theme => ({
   },
   input: {
     display: "flex",
-    padding: 0,
-    height: "2.2em"
+    padding: "18.5px 14px"
   },
   inputLabel: {
     whiteSpace: "nowrap",
@@ -46,7 +45,7 @@ export default theme => ({
   },
   paper: {
     position: "absolute",
-    zIndex: 1,
+    zIndex: 2,
     marginTop: theme.spacing.unit,
     left: 0,
     right: 0

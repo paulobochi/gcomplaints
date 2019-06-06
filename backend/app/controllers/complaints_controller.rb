@@ -6,7 +6,7 @@ class ComplaintsController < ApplicationController
       .ransack(query_params)
       .result
       .includes(:company, city: [ state: :country ])
-      .order(params[:sort])
+      .order(params[:sort] || "created_at desc")
       .page(params[:page])
       .per(params[:size])
 

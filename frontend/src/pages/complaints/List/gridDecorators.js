@@ -1,4 +1,4 @@
-import { format, parseISO } from "date-fns";
+import { format } from "date-fns";
 
 export const getColumns = () => [
   {
@@ -11,7 +11,7 @@ export const getColumns = () => [
   },
   {
     name: "company",
-    title: "Empresa",
+    title: "Company",
     getCellValue: row => (row.company ? row.company.name : undefined)
   },
   {
@@ -29,5 +29,14 @@ export const getColumns = () => [
   {
     name: "actions",
     title: " "
+  }
+];
+
+export const extensions = [
+  {
+    columnName: "actions",
+    sortingEnabled: false,
+    align: "right",
+    width: 100
   }
 ];

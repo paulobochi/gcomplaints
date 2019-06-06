@@ -8,6 +8,7 @@ export default ({
   fullWidth,
   required,
   autoFocus,
+  variant,
   input: { ...inputProps },
   ...otherProps
 }) => {
@@ -31,6 +32,7 @@ export default ({
       error={error}
       helperText={helperText}
       fullWidth={fullWidth}
+      variant={variant || "outlined"}
       {...inputProps}
       {...otherProps}
     />

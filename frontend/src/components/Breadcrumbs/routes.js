@@ -1,6 +1,7 @@
 export default [
+  { path: "/", breadcrumb: null },
   {
-    path: "/",
+    path: "/complaints",
     breadcrumb: "Complaints"
   }
 ];

@@ -17,6 +17,14 @@ const api = {
     return axios.put(`/complaints/${id}`, values);
   },
 
+  createOrUpdate(id, values) {
+    if (id) {
+      return this.update(id, values);
+    }
+
+    return this.create(values);
+  },
+
   destroy(id) {
     return axios.delete(`/complaints/${id}`);
   }

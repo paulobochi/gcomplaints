@@ -1,13 +1,10 @@
 import React, { lazy, Suspense } from "react";
 import { Router } from "react-router";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { createHashHistory } from "history";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 
 import { configureAPI } from "./api";
 import "./App.css";
@@ -23,21 +20,24 @@ configureAPI();
 function App() {
   return (
     <div className="App">
-      <AppBar position="fixed">
+      <AppBar position="static">
         <Toolbar>
           <Typography variant="h6">GComplaints</Typography>
         </Toolbar>
       </AppBar>
 
       <Router history={history}>
-        <div className="main-wrapper">
+        <div>
           <Breadcrumbs />
-          <div className="main">
-            <Suspense fallback={<Loading fullScreen />}>
-              <Switch>
-                <Route exact path="/" component={Complaints} />
-              </Switch>
-            </Suspense>
+          <div className="main-wrapper">
+            <div className="main">
+              <Suspense fallback={<Loading fullScreen />}>
+                <Switch>
+                  <Route path="/complaints" component={Complaints} />
+                  <Redirect to="/complaints" />
+                </Switch>
+              </Suspense>
+            </div>
           </div>
         </div>
       </Router>

@@ -10,7 +10,6 @@ const styles = theme => ({
     display: "flex",
     minHeight: 50,
     alignItems: "center",
-    justifyContent: "space-between",
     borderBottom: "1px solid #ccc",
     padding: "10px 20px",
     boxSizing: "border-box",
@@ -24,7 +23,8 @@ const styles = theme => ({
     }
   },
   separator: {
-    color: theme.palette.text.primary
+    color: theme.palette.text.primary,
+    margin: "0px 5px"
   }
 });
 
@@ -39,7 +39,7 @@ const Breadcrumbs = ({ classes, breadcrumbs }: Props) => (
       <span key={match.url}>
         <NavLink to={match.url}>{breadcrumb}</NavLink>
         {index < breadcrumbs.length - 1 && (
-          <span className={classes.separator}> / </span>
+          <span className={classes.separator}>/</span>
         )}
       </span>
     ))}
