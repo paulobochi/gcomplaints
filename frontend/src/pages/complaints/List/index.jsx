@@ -71,11 +71,16 @@ export default ({ match }) => {
 
   const handleFetchComplaints = useCallback(params => {
     setFetching(true);
-    complaintApi.collect(params).then(response => {
-      setComplaints(response.data);
-      setFetched(true);
-      setFetching(false);
-    });
+    complaintApi
+      .collect(params)
+      .then(response => {
+        setComplaints(response.data);
+        setFetched(true);
+        setFetching(false);
+      })
+      .catch(error => {
+        setFetching(false);
+      });
   }, []);
 
   const handleFetchCompanies = useCallback(

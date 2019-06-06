@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import classNames from "classnames";
 import AsyncPaginate from "react-select-async-paginate";
 import { withStyles } from "@material-ui/core/styles";
